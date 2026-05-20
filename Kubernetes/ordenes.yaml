@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ordenes-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ordenes
+  template:
+    metadata:
+      labels:
+        app: ordenes
+    spec:
+      containers:
+      - name: ordenes
+        image: tu-usuario-docker/ordenes:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+        env:
+        - name: CATALOGO_URL
+          valueFrom:
+            configMapKeyRef:
+              name: tienda-config
+              key: CATALOGO_URL
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ordenes-service
+spec:
+  selector:
+    app: ordenes
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000

@@ -1,0 +1,99 @@
+🛠️ Prerrequisitos
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
+
+Docker Desktop
+
+Minikube
+
+Kubectl (Normalmente incluido con Docker/Minikube)
+
+PowerShell (Ejecutado como Administrador de preferencia)
+
+
+
+#  Guía de Ejecución Paso a Paso
+Sigue estos comandos detallados en tu terminal de PowerShell para desplegar el clúster localmente.
+
+Paso 1: Iniciar el Clúster de Kubernetes
+Abre PowerShell y arranca la máquina virtual de Minikube:
+
+```bash
+minikube start
+```
+
+Para verificar que el clúster está vivo:
+
+```bash
+kubectl get nodes
+```
+
+Paso 2: Configurar las Variables de Entorno de Docker
+Debemos indicarle a la terminal que use el demonio de Docker interno de Minikube. Esto permite compilar las imágenes directamente dentro del clúster sin subirlas a internet:
+
+```bash
+minikube docker-env | Invoke-Expression
+```
+Paso 3: Construir las Imágenes de Docker
+Navega a la carpeta raíz de tu proyecto Tienda de hardware y compila cada microservicio de manera consecutiva:
+
+# 1. Construir el Frontend
+
+```bash
+cd frontend
+docker build -t tu-usuario-docker/frontend:latest .
+```
+
+# 2. Construir el Catálogo
+
+```bash
+cd ../servicio-catalogo
+docker build -t tu-usuario-docker/catalogo:latest .
+```
+# 3. Construir Órdenes
+
+```bash
+cd ../servicio-ordenes
+docker build -t tu-usuario-docker/ordenes:latest .
+```
+# 4. Construir Usuarios
+
+```bash
+cd ../servicio-usuarios
+docker build -t tu-usuario-docker/usuarios:latest .
+```
+
+Paso 4: Desplegar los Manifiestos en Kubernetes
+Regresa a la carpeta raíz e ingresa al directorio de Kubernetes para aplicar los archivos de configuración .yaml:
+
+```bash
+cd ../Kubernetes
+```
+
+# Aplicar variables globales
+
+```bash
+kubectl apply -f configmap.yaml
+```
+# Aplicar los microservicios
+
+```bash
+kubectl apply -f catalogo.yaml
+kubectl apply -f ordenes.yaml
+kubectl apply -f usuarios.yaml
+kubectl apply -f frontend.yaml
+```
+Paso 5: Verificar el Estado del Despliegue
+Verifica que los balanceadores de red (Services) y las réplicas escaladas (Pods) estén en estado Running:
+
+```bash
+kubectl get pods
+kubectl get svc
+```
+
+Paso 6: Abrir la Página Web (Túnel de Red)
+Como estamos corriendo Kubernetes de forma local, Minikube necesita abrir un puente de red seguro para exponer el Frontend a tu navegador de Windows. Ejecuta este comando:
+
+```bash
+minikube service frontend-service
+```
+IMPORTANTE: No cierres esta pestaña de la terminal ni presiones Ctrl+C. Déjala minimizada para mantener el túnel web activo mientras usas la aplicación.
