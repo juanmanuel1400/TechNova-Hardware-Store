@@ -17,13 +17,12 @@ spec:
         image: tu-usuario-docker/ordenes:latest
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8000
+            - containerPort: 8000
         env:
-        - name: CATALOGO_URL
-          valueFrom:
-            configMapKeyRef:
-              name: tienda-config
-              key: CATALOGO_URL
+            - name: CATALOGO_URL
+              value: "http://catalogo-service:8000"
+            - name: DATABASE_URL
+              value: "postgresql://admin:secret@postgres-service:5432/ordenes_db"
 ---
 apiVersion: v1
 kind: Service

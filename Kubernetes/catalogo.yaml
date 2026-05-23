@@ -13,11 +13,14 @@ spec:
         app: catalogo
     spec:
       containers:
-      - name: catalogo
-        image: tu-usuario-docker/catalogo:latest
-        imagePullPolicy: IfNotPresent 
-        ports:
-        - containerPort: 8000
+        - name: catalogo
+          image: tu-usuario-docker/catalogo:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          env:
+            - name: MONGODB_CNN
+              value: "mongodb://mongodb-service:27017"
 ---
 apiVersion: v1
 kind: Service

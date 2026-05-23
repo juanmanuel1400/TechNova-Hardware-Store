@@ -17,7 +17,10 @@ spec:
         image: tu-usuario-docker/usuarios:latest
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8000
+            - containerPort: 8000
+        env:
+            - name: DATABASE_URL
+              value: "postgresql://admin:secret@postgres-service:5432/usuarios_db"
 ---
 apiVersion: v1
 kind: Service

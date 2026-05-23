@@ -82,6 +82,12 @@ kubectl apply -f ordenes.yaml
 kubectl apply -f usuarios.yaml
 kubectl apply -f frontend.yaml
 ```
+# Aplicar las Bases de datos
+```bash
+kubectl apply -f mongodb.yaml
+kubectl apply -f postgres.yaml
+```
+
 Paso 5: Verificar el Estado del Despliegue
 Verifica que los balanceadores de red (Services) y las réplicas escaladas (Pods) estén en estado Running:
 
