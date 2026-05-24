@@ -103,3 +103,112 @@ Como estamos corriendo Kubernetes de forma local, Minikube necesita abrir un pue
 minikube service frontend-service
 ```
 IMPORTANTE: No cierres esta pestaña de la terminal ni presiones Ctrl+C. Déjala minimizada para mantener el túnel web activo mientras usas la aplicación.
+
+
+
+
+
+
+# 🚀 Simulador de Tráfico y Generación de Datasets de Negocio (TechNova)
+
+Este directorio contiene el motor de simulación de tráfico de alta fidelidad basado en **k6** y el script de orquestación en **Python** para la generación del dataset de negocio optimizado para análisis con **Apache Spark**.
+
+---
+
+## 🏗️ Arquitectura de Simulación
+
+El simulador interactúa directamente con los microservices de la tienda en tu clúster de Kubernetes/Minikube a través del puerto expuesto `8080` (vía `frontend-service`):
+
+```mermaid
+graph TD
+    K6[k6 Engine] -->|Simular Personas| FE[frontend-service:8080]
+    FE -->|/api/usuarios| SU[servicio-usuarios]
+    FE -->|/api/productos| SC[servicio-catalogo]
+    FE -->|/api/ordenes| SO[servicio-ordenes]
+    SU -->|Log Registros/Logins| K6
+    SC -->|Log Vistas de Productos| K6
+    SO -->|Log Compras y Out of Stock| K6
+```
+
+---
+
+## 👥 Arquetipos de Comportamiento (Personas)
+
+Para emular interacciones reales de comercio electrónico, el script de k6 (`simulacion_trafico.js`) ejecuta en paralelo tres escenarios con patrones de conducta diferenciados:
+
+1. **Navegantes (`flujoNavegacion` - 5 VUs)**:
+   - Usuarios que consultan la tienda de manera casual.
+   - Realizan registros de cuenta aleatorios (~50% de probabilidad).
+   - Exploran el catálogo y visualizan de 1 a 2 productos en detalle.
+   - No realizan transacciones de compra.
+
+2. **Compradores (`flujoCompra` - 8 VUs)**:
+   - Usuarios decididos a adquirir productos.
+   - Realizan registro y login obligatorio.
+   - Exploran el catálogo, seleccionan un producto al azar e inician el proceso de checkout.
+   - Si hay stock, completan la orden con éxito; si el producto se agota, registran un error comercial de negocio.
+
+3. **Compradores Compulsivos (`flujoCompulsivo` - 2 VUs)**:
+   - Emulan la demanda masiva de artículos de alta demanda (ej. *Tarjeta Gráfica RTX 4090* con ID 1).
+   - Acceden al producto e intentan comprar de forma agresiva.
+   - Esto provoca que el stock del producto disminuya rápidamente a 0, disparando errores controlados de negocio (`Sin stock suficiente`) para enriquecer el dataset con excepciones analíticas.
+
+---
+
+## ⏰ Simulación Temporal (Curva Diurna Realista)
+
+Para evitar que todos los eventos tengan la misma hora y permitir análisis temporales significativos en Spark, el simulador utiliza un generador de marcas de tiempo basado en **probabilidad ponderada**:
+
+- **Curva Diurna**: Los eventos se distribuyen a lo largo de las 24 horas del día.
+- **Horas Pico**: Se asigna mayor peso y tráfico a la franja nocturna (18:00 - 22:00).
+- **Valles**: Se minimiza el tráfico de madrugada (02:00 - 05:00).
+- **Desplazamiento**: Si un timestamp generado resulta en el futuro, se mueve automáticamente al día anterior, logrando un dataset histórico continuo.
+
+---
+
+## ⚙️ Instrucciones de Ejecución
+
+Los scripts están diseñados de forma **autónoma y portable**, autodetectando la raíz del workspace para encontrar el binario localized de `k6` y guardar los datasets.
+
+### Ejecución Directa (Recomendado)
+Desde la raíz del proyecto, ejecuta el orquestador:
+
+```bash
+python3 simulador-trafico/generate_spark_dataset.py
+```
+
+### Ejecución desde este Directorio
+También puedes ingresar a esta carpeta y correr el script localmente:
+
+```bash
+cd simulador-trafico
+python3 generate_spark_dataset.py
+```
+
+*El proceso tarda aproximadamente 30 segundos, tras lo cual se consolidarán los archivos de salida.*
+
+---
+
+## 💾 Salidas Generadas (Datasets para Spark)
+
+Los resultados se guardan en el directorio raíz de la aplicación bajo la carpeta `datasets/`:
+
+*   **`datasets/events.json` (JSON Lines / JSONL)**: Archivo ideal para ingestionar en **Apache Spark** mediante `spark.read.json()`. Preserva la estructura rica de los campos y tipos de datos.
+*   **`datasets/events.csv` (CSV Plano)**: Formato consolidado y unificado con todas las propiedades aplanadas, útil para hojas de cálculo u otros análisis rápidos.
+
+### Atributos Clave del Evento
+```json
+{
+  "timestamp": "2026-05-23T20:46:48.636Z",
+  "event_type": "order_completed",
+  "session_id": "sess_nq8b6mv7b7",
+  "device": "desktop",
+  "user_id": 3660,
+  "product_id": 8,
+  "product_name": "Mouse Gamer Inalámbrico",
+  "price": 70.0,
+  "quantity": 1,
+  "status": "success",
+  "latency_ms": 57
+}
+```

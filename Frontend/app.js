@@ -1,247 +1,209 @@
+let authModal = null;
+let historialModal = null;
+let pagoModalObj = null;
 
-let carrito = [];
-let modoRegistro = false;
+let esModoRegistro = false;
+let productoAPagarId = null;
 
-let authModal;
-let cartModal;
-let historialModal;
 
 document.addEventListener("DOMContentLoaded", () => {
-  
     authModal = new bootstrap.Modal(document.getElementById('authModal'));
-    cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+    historialModal = new bootstrap.Modal(document.getElementById('historialModal'));
+    pagoModalObj = new bootstrap.Modal(document.getElementById('pagoModal'));
+
     
+    document.getElementById("formAuth").addEventListener("submit", manejarAutenticacion);
 
-    const histElement = document.getElementById('historialModal');
-    if(histElement) historialModal = new bootstrap.Modal(histElement);
-
+    comprobarEstadoSesion();
     cargarProductos();
-    
-
-    verificarSesionUI();
 });
 
 
+function comprobarEstadoSesion() {
+    const nombreUsuario = localStorage.getItem('usuario_nombre');
+    const btnAuth = document.getElementById('btnAuth');
+    if (nombreUsuario) {
+        btnAuth.innerHTML = `<i class="fa-solid fa-user-check"></i> Hola, ${nombreUsuario}`;
+        btnAuth.className = "btn btn-info";
+        btnAuth.onclick = cerrarSesion;
+    } else {
+        btnAuth.innerHTML = `<i class="fa-solid fa-user"></i> Iniciar Sesión`;
+        btnAuth.className = "btn btn-outline-light";
+        btnAuth.onclick = abrirAuthModal;
+    }
+}
+
+function abrirAuthModal() {
+    authModal.show();
+}
+
+function cerrarSesion() {
+    if (confirm("¿Deseas cerrar tu sesión?")) {
+        localStorage.clear();
+        comprobarEstadoSesion();
+        window.location.reload();
+    }
+}
+
+
+function conmutarModoAuth() {
+    esModoRegistro = !esModoRegistro;
+    const titulo = document.getElementById("authModalTitle");
+    const grupoNombre = document.getElementById("grupoNombre");
+    const btnSubmit = document.getElementById("btnAuthSubmit");
+    const btnCambiar = document.getElementById("btnCambiarModo");
+
+    if (esModoRegistro) {
+        titulo.innerText = "Crear Cuenta";
+        grupoNombre.classList.remove("d-none");
+        document.getElementById("authNombre").required = true;
+        btnSubmit.innerText = "Registrarse";
+        btnCambiar.innerText = "¿Ya tienes cuenta? Inicia sesión";
+    } else {
+        titulo.innerText = "Iniciar Sesión";
+        grupoNombre.classList.add("d-none");
+        document.getElementById("authNombre").required = false;
+        btnSubmit.innerText = "Ingresar";
+        btnCambiar.innerText = "¿No tienes cuenta? Regístrate";
+    }
+}
+
+
+async function manejarAutenticacion(e) {
+    e.preventDefault();
+    const correo = document.getElementById("authCorreo").value;
+    const password = document.getElementById("authPassword").value;
+
+    if (esModoRegistro) {
+        const nombre = document.getElementById("authNombre").value;
+        try {
+            const res = await fetch("/api/usuarios/registro", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ nombre, correo, password })
+            });
+            if (res.ok) {
+                alert("¡Cuenta registrada con éxito! Ahora inicia sesión.");
+                conmutarModoAuth();
+            } else {
+                alert("Error al registrar cuenta. El correo podría estar en uso.");
+            }
+        } catch (err) {
+            console.error(err);
+        }
+    } else {
+        try {
+            const res = await fetch("/api/usuarios/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ correo, password })
+            });
+            if (res.ok) {
+                const datosUsuario = await res.json();
+                localStorage.setItem('usuario_id', datosUsuario.id);
+                localStorage.setItem('usuario_nombre', datosUsuario.nombre);
+                authModal.hide();
+                comprobarEstadoSesion();
+                document.getElementById("formAuth").reset();
+            } else {
+                alert("Credenciales incorrectas. Inténtalo de nuevo.");
+            }
+        } catch (err) {
+            console.error(err);
+        }
+    }
+}
+
+
 async function cargarProductos() {
+    const lista = document.getElementById("listaProductos");
+    if (!lista) return;
+
     try {
-        const response = await fetch('/api/productos');
-        const productos = await response.json();
-        const contenedor = document.getElementById('productos-container'); 
-        
-        contenedor.innerHTML = ''; 
-        
-        productos.forEach(prod => {
-            const card = `
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 text-bg-dark border-secondary">
-                        <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}" style="height: 200px; object-fit: cover;">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-info">${prod.nombre}</h5>
-                            <p class="card-text fs-4 fw-bold">$${prod.precio}</p>
-                            <p class="card-text text-muted">Stock disponible: ${prod.stock}</p>
-                            <button class="btn btn-outline-light mt-auto" 
-                                onclick="agregarAlCarrito(${prod.id}, '${prod.nombre}', ${prod.precio})"
-                                ${prod.stock === 0 ? 'disabled' : ''}>
-                                ${prod.stock === 0 ? 'Agotado' : '<i class="fa-solid fa-cart-plus"></i> Agregar al carrito'}
-                            </button>
+        const res = await fetch("/api/productos");
+        const productos = await res.json();
+        lista.innerHTML = "";
+
+        productos.forEach(producto => {
+            lista.innerHTML += `
+                <div class="col">
+                    <div class="card h-100 text-light shadow-sm">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold text-info">${producto.nombre}</h5>
+                                <p class="card-text text-muted small">${producto.descripcion}</p>
+                            </div>
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="fs-4 fw-bold text-success">$${producto.precio.toLocaleString()}</span>
+                                    <span class="badge ${producto.stock > 0 ? 'bg-secondary' : 'bg-danger'}">Stock: ${producto.stock}</span>
+                                </div>
+                                <button class="btn btn-primary w-100" ${producto.stock === 0 ? 'disabled' : ''} onclick="abrirModalPago(${producto.id})">
+                                    <i class="fa-solid fa-bag-shopping"></i> Comprar
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             `;
-            contenedor.innerHTML += card;
         });
-    } catch (error) {
-        console.error("Error cargando el catálogo:", error);
+    } catch (err) {
+        console.error("Error cargando productos:", err);
+        lista.innerHTML = `<p class="text-danger">No se pudo conectar con el microservicio de catálogo.</p>`;
     }
 }
 
 
-function agregarAlCarrito(id, nombre, precio) {
-    const itemExistente = carrito.find(item => item.id === id);
-    if (itemExistente) {
-        itemExistente.cantidad++;
-    } else {
-        carrito.push({ id, nombre, precio, cantidad: 1 });
-    }
-    actualizarCarritoUI();
-    
-
-}
-
-function actualizarCarritoUI() {
-    const contenedorCarrito = document.getElementById('cartItems');
-    const totalSpan = document.getElementById('cartTotal');
-    
-    contenedorCarrito.innerHTML = '';
-    let total = 0;
-
-    if (carrito.length === 0) {
-        contenedorCarrito.innerHTML = '<p class="text-center text-muted my-4">Tu carrito está vacío</p>';
-    } else {
-        carrito.forEach((item, index) => {
-            total += item.precio * item.cantidad;
-            contenedorCarrito.innerHTML += `
-                <div class="d-flex justify-content-between align-items-center border-bottom border-secondary pb-2 mb-2">
-                    <div>
-                        <h6 class="mb-0">${item.nombre}</h6>
-                        <small class="text-muted">$${item.precio} x ${item.cantidad}</small>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <span class="fw-bold text-success me-3">$${item.precio * item.cantidad}</span>
-                        <button class="btn btn-sm btn-danger" onclick="eliminarDelCarrito(${index})"><i class="fa-solid fa-trash"></i></button>
-                    </div>
-                </div>
-            `;
-        });
-    }
-    totalSpan.innerText = total.toFixed(2);
-}
-
-function eliminarDelCarrito(index) {
-    carrito.splice(index, 1);
-    actualizarCarritoUI();
-}
-
-
-function alternarModoAuth() {
-    modoRegistro = !modoRegistro;
-    document.getElementById('authTitle').innerText = modoRegistro ? "Crear Cuenta" : "Iniciar Sesión";
-    document.getElementById('authSubmitBtn').innerText = modoRegistro ? "Registrarse" : "Entrar";
-    document.getElementById('nombreField').style.display = modoRegistro ? "block" : "none";
-    document.getElementById('toggleAuthMode').innerText = modoRegistro ? "¿Ya tienes cuenta? Inicia sesión" : "¿No tienes cuenta? Regístrate aquí";
-}
-
-document.getElementById('authForm').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const correo = document.getElementById('authCorreo').value;
-    const password = document.getElementById('authPassword').value;
-    const nombre = document.getElementById('authNombre').value;
-
-    const endpoint = modoRegistro ? '/api/usuarios/registro' : '/api/usuarios/login';
-    const bodyData = modoRegistro ? { nombre, correo, password } : { correo, password };
-
-    try {
-        const response = await fetch(endpoint, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(bodyData)
-        });
-
-        const data = await response.json();
-
-        if (response.ok) {
-
-            let usuarioId = modoRegistro ? data.id : data.token.split('-').pop(); 
-            let usuarioNombre = modoRegistro ? data.nombre : data.mensaje.replace('Bienvenido ', '');
-            
-            localStorage.setItem('usuario_id', usuarioId);
-            localStorage.setItem('usuario_nombre', usuarioNombre);
-            
-            authModal.hide();
-            verificarSesionUI();
-            
-            alert(`¡Bienvenido ${usuarioNombre}!`);
-            
-
-            if (carrito.length > 0) {
-                cartModal.show();
-            }
-        } else {
-            alert("Error: " + (data.detail || "No se pudo procesar la solicitud"));
-        }
-    } catch (error) {
-        console.error("Error en autenticación:", error);
-        alert("Error de conexión con el servidor.");
-    }
-});
-
-function cerrarSesion() {
-    localStorage.removeItem('usuario_id');
-    localStorage.removeItem('usuario_nombre');
-    verificarSesionUI();
-    alert("Has cerrado sesión exitosamente.");
-}
-
-function verificarSesionUI() {
-    const nombreUsuario = localStorage.getItem('usuario_nombre');
-    const userDisplay = document.getElementById('userDisplay');
-    const loginBtn = document.getElementById('loginBtn');
-    const logoutBtn = document.getElementById('logoutBtn');
-
-    if (nombreUsuario) {
-        if(userDisplay) userDisplay.innerText = `Hola, ${nombreUsuario}`;
-        if(loginBtn) loginBtn.style.display = 'none';
-        if(logoutBtn) logoutBtn.style.display = 'inline-block';
-    } else {
-        if(userDisplay) userDisplay.innerText = '';
-        if(loginBtn) loginBtn.style.display = 'inline-block';
-        if(logoutBtn) logoutBtn.style.display = 'none';
-    }
-}
-
-
-async function procesarPago() {
-
-    const usuarioIdReal = localStorage.getItem('usuario_id');
-    
-    if (!usuarioIdReal) {
-        cartModal.hide();
+function abrirModalPago(productoId) {
+    const usuarioId = localStorage.getItem('usuario_id');
+    if (!usuarioId) {
         authModal.show();
         return;
     }
-
-    if (carrito.length === 0) {
-        alert("El carrito está vacío.");
-        return;
-    }
-
-    let errores = 0;
-
-
-    for (let item of carrito) {
-        
-        for (let i = 0; i < item.cantidad; i++) {
-            try {
-                const response = await fetch('/api/ordenes', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ 
-                        usuario_id: parseInt(usuarioIdReal), 
-                        producto_id: item.id 
-                    })
-                });
-                
-                if (!response.ok) {
-                    const errData = await response.json();
-                    console.error("Error en compra:", errData);
-                    errores++;
-                }
-            } catch (error) {
-                console.error("Error de red:", error);
-                errores++;
-            }
-        }
-    }
-
-    if (errores === 0) {
-        alert("¡Pago aprobado! Las órdenes han sido registradas a tu cuenta.");
-        carrito = [];
-        actualizarCarritoUI();
-        cartModal.hide();
-        cargarProductos();
-    } else {
-        alert(`La compra finalizó, pero hubo problemas con ${errores} producto(s) por falta de stock.`);
-        carrito = [];
-        actualizarCarritoUI();
-        cargarProductos();
-    }
+    productoAPagarId = productoId;
+    pagoModalObj.show();
 }
 
+async function procesarPago() {
+    if (!productoAPagarId) return;
+    
+    const btnPagar = document.getElementById('btnProcesarPago');
+    
+
+    btnPagar.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Validando tarjeta...';
+    btnPagar.disabled = true;
+    
+    setTimeout(async () => {
+        const usuarioId = localStorage.getItem('usuario_id');
+        
+        try {
+            const response = await fetch(`/api/productos/${productoAPagarId}/comprar?usuario_id=${usuarioId}`, {
+                method: 'PUT'
+            });
+            
+            if (response.ok) {
+                alert("¡Transacción aprobada! Tu orden ha sido generada en el sistema.");
+                cargarProductos(); 
+            } else {
+                alert("La transacción fue rechazada o el artículo se quedó sin stock.");
+            }
+        } catch (error) {
+            console.error("Error en la transacción:", error);
+            alert("Ocurrió un error al procesar el pago con el servidor.");
+        } finally {
+            pagoModalObj.hide();
+            btnPagar.innerHTML = '<i class="fa-solid fa-lock"></i> Pagar de forma segura';
+            btnPagar.disabled = false;
+            document.getElementById('formPago').reset();
+            productoAPagarId = null;
+        }
+    }, 1500);
+}
 
 
 async function cargarMisOrdenes() {
     const usuarioIdReal = localStorage.getItem('usuario_id');
-    const nombreUsuario = localStorage.getItem('usuario_nombre'); 
+    const nombreUsuario = localStorage.getItem('usuario_nombre');
     
     if (!usuarioIdReal) {
         authModal.show();
@@ -249,12 +211,12 @@ async function cargarMisOrdenes() {
     }
 
     try {
-
+  
         const resOrdenes = await fetch('/api/ordenes');
         const todasLasOrdenes = await resOrdenes.json();
         const misOrdenes = todasLasOrdenes.filter(o => o.usuario_id === parseInt(usuarioIdReal));
         
-
+        
         const resProductos = await fetch('/api/productos');
         const catalogo = await resProductos.json();
         
@@ -267,16 +229,14 @@ async function cargarMisOrdenes() {
             contenedorHistorial.innerHTML = '<p class="text-muted">Aún no has realizado ninguna compra.</p>';
         } else {
             misOrdenes.forEach(orden => {
-
                 const producto = catalogo.find(p => p.id === orden.producto_id);
-                const nombreProducto = producto ? producto.nombre : "Producto no encontrado";
-
+                const nombreProducto = producto ? producto.nombre : "Producto no identificado";
 
                 
                 contenedorHistorial.innerHTML += `
-                    <div class="alert alert-dark border-secondary d-flex justify-content-between align-items-center">
+                    <div class="alert alert-dark border-secondary d-flex justify-content-between align-items-center mb-3">
                         <div>
-                            <strong class="fs-5">Orden #${orden.id}</strong><br>
+                            <strong class="fs-5 text-light">Orden #${orden.id}</strong><br>
                             <span class="text-primary fw-bold"><i class="fa-solid fa-user"></i> Cliente: ${nombreUsuario}</span><br>
                             <span class="text-dark fw-bold"><i class="fa-solid fa-box"></i> Producto: ${nombreProducto}</span>
                         </div>
@@ -288,9 +248,10 @@ async function cargarMisOrdenes() {
             });
         }
         
-        if(historialModal) historialModal.show();
+        if (historialModal) historialModal.show();
 
     } catch (error) {
-        console.error("Error cargando historial:", error);
+        console.error("Error cargando historial de órdenes:", error);
+        alert("No se pudo recuperar el historial. Por favor comprueba las APIs.");
     }
 }

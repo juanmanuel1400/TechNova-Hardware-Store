@@ -1,0 +1,687 @@
+timestamp,event_type,category,device,email,error_type,items_count,latency_ms,price,product_id,product_name,quantity,session_id,status,user_id
+2026-05-22T23:28:50.505Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_5sxa40vn9k,,1
+2026-05-23T02:50:41.505Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_4i8himgaz4x,,1
+2026-05-22T22:35:52.558Z,user_registered,,mobile,navegante_4305@technova.com,,,53,,,,,sess_10bxb3esl1tl,success,3747
+2026-05-23T20:49:35.560Z,user_registered,,desktop,comprador_34909@technova.com,,,55,,,,,sess_cyzdz46563b,success,3745
+2026-05-23T03:18:55.562Z,user_registered,,desktop,comprador_85710@technova.com,,,57,,,,,sess_an0ju48vx5,success,3748
+2026-05-23T17:26:47.564Z,user_registered,,desktop,comprador_67322@technova.com,,,59,,,,,sess_8vlb1mqnxzb,success,3751
+2026-05-23T14:27:05.566Z,user_registered,,desktop,comprador_98638@technova.com,,,61,,,,,sess_95npx4uc7bp,success,3744
+2026-05-23T18:59:46.568Z,user_registered,,desktop,comprador_94423@technova.com,,,63,,,,,sess_i41ouyyvn5,success,3749
+2026-05-23T02:23:36.569Z,user_registered,,desktop,comprador_93160@technova.com,,,64,,,,,sess_jngwkvlnbqe,success,3746
+2026-05-23T22:12:45.575Z,user_registered,,desktop,navegante_94661@technova.com,,,70,,,,,sess_sxt5xgg2lmr,success,3750
+2026-05-23T09:40:11.575Z,user_registered,,desktop,navegante_76617@technova.com,,,70,,,,,sess_qj2gn1celcn,success,3754
+2026-05-23T20:53:21.577Z,user_registered,,mobile,comprador_7532@technova.com,,,72,,,,,sess_msj9nuc75m,success,3753
+2026-05-23T10:31:49.577Z,user_registered,,desktop,comprador_6197@technova.com,,,72,,,,,sess_4dg0xiy4l75,success,3752
+2026-05-23T02:28:20.006Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_1eyesl803s6,,1
+2026-05-22T23:24:17.006Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_s655x2hcbyk,,1
+2026-05-23T14:59:33.029Z,order_failed,,desktop,,Sin stock suficiente,,23,1600,1,Tarjeta Gráfica RTX 4090,,sess_8udyqah5trb,out_of_stock,1
+2026-05-22T23:44:48.029Z,order_failed,,desktop,,Sin stock suficiente,,23,1600,1,Tarjeta Gráfica RTX 4090,,sess_2apv3qzxts6,out_of_stock,1
+2026-05-23T14:12:13.529Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_lmrzi0np24j,,2
+2026-05-23T00:38:46.529Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_axpt6jz7ix,,2
+2026-05-23T21:54:02.576Z,user_logged_in,,mobile,comprador_34909@technova.com,,,16,,,,,sess_moj621k3ns,success,3745
+2026-05-23T01:17:45.579Z,user_logged_in,,mobile,comprador_67322@technova.com,,,14,,,,,sess_rbloxsxob1j,success,3751
+2026-05-23T21:17:58.586Z,user_logged_in,,desktop,comprador_7532@technova.com,,,9,,,,,sess_3yg5t8buhct,success,3753
+2026-05-23T18:39:29.587Z,user_logged_in,,mobile,comprador_6197@technova.com,,,9,,,,,sess_q1dguekgyj8,success,3752
+2026-05-23T03:42:51.587Z,user_logged_in,,desktop,comprador_85710@technova.com,,,24,,,,,sess_ufjw5o694fd,success,3748
+2026-05-23T03:19:07.588Z,user_logged_in,,desktop,comprador_93160@technova.com,,,19,,,,,sess_pymzhpf0pfr,success,3746
+2026-05-23T01:39:26.590Z,user_logged_in,,desktop,comprador_98638@technova.com,,,24,,,,,sess_jy6p01uf8t,success,3744
+2026-05-23T18:07:11.591Z,user_logged_in,,desktop,comprador_94423@technova.com,,,22,,,,,sess_te4j1k4s9qa,success,3749
+2026-05-23T02:06:18.820Z,catalog_browsed,,desktop,,,10,4,,,,,sess_0vlzaqi0lli9,success,3747
+2026-05-23T00:11:09.030Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_t541wb6aor,,2
+2026-05-23T01:08:45.030Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_iuyatgifsp,,2
+2026-05-23T04:00:30.046Z,order_failed,,mobile,,Sin stock suficiente,,16,1600,1,Tarjeta Gráfica RTX 4090,,sess_3qkr1cgd56l,out_of_stock,2
+2026-05-23T13:25:41.050Z,order_failed,,mobile,,Sin stock suficiente,,20,1600,1,Tarjeta Gráfica RTX 4090,,sess_li412dksa4b,out_of_stock,2
+2026-05-23T21:11:22.518Z,catalog_browsed,,mobile,,,10,16,,,,,sess_zn8q62mf34p,success,
+2026-05-23T04:57:15.547Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_x9by0hmu32,,1
+2026-05-22T23:41:02.550Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_mao9t51ah9,,2
+2026-05-22T23:02:26.585Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_zbotf7bokp9,,3745
+2026-05-23T18:56:14.587Z,product_viewed,Audio,mobile,,,,,85,10,Auriculares Gaming 7.1,,sess_if6n8rzhr4,,3751
+2026-05-23T03:04:47.598Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_72tox0yqbcb,,3752
+2026-05-23T13:49:18.599Z,product_viewed,Almacenamiento,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_9jmxnobearn,,3749
+2026-05-22T23:01:39.600Z,product_viewed,Almacenamiento,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_ebl94wmfl4e,,3748
+2026-05-23T11:09:04.602Z,product_viewed,Periféricos,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_jrn1imdqsjf,,3753
+2026-05-22T23:44:00.605Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_vgi6nci5tn,,3746
+2026-05-23T20:41:00.607Z,product_viewed,Audio,mobile,,,,,85,10,Auriculares Gaming 7.1,,sess_jdj1wma49o,,3744
+2026-05-23T21:12:22.850Z,catalog_browsed,,desktop,,,10,12,,,,,sess_9dpl0i5097,success,3754
+2026-05-23T03:21:16.921Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_dy0zg9fjona,,3747
+2026-05-23T01:58:44.938Z,user_registered,,desktop,navegante_56240@technova.com,,,16,,,,,sess_avjdlswclf7,success,3755
+2026-05-23T01:13:23.048Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_ic8vqc8fh4a,,1
+2026-05-22T23:39:01.051Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_c4vdths77fe,,2
+2026-05-23T13:08:50.063Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_sehn568adib,out_of_stock,1
+2026-05-23T00:35:56.068Z,order_failed,,mobile,,Sin stock suficiente,,17,1600,1,Tarjeta Gráfica RTX 4090,,sess_gmqq7p2nnbg,out_of_stock,2
+2026-05-23T17:59:11.112Z,catalog_browsed,,desktop,,,10,10,,,,,sess_36f13fm24j8,success,
+2026-05-23T14:54:35.226Z,catalog_browsed,,mobile,,,10,9,,,,,sess_14x34lqtzmw,success,3750
+2026-05-23T18:59:37.454Z,product_viewed,Audio,mobile,,,,,85,10,Auriculares Gaming 7.1,,sess_9qifqvzgmqb,,
+2026-05-23T00:23:28.564Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_5cf76uyno,,2
+2026-05-23T20:46:26.569Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_qkffwyop0c8,,1
+2026-05-23T03:59:06.001Z,product_viewed,Almacenamiento,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_b8qzp21o28,,
+2026-05-23T11:12:08.063Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_pifojbggs3g,,
+2026-05-23T03:31:08.065Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_gbome62opcm,,2
+2026-05-23T18:36:30.070Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_mv235dyik9s,,1
+2026-05-23T11:07:51.076Z,order_failed,,desktop,,Sin stock suficiente,,11,1600,1,Tarjeta Gráfica RTX 4090,,sess_qhj045qrnec,out_of_stock,2
+2026-05-23T01:07:46.080Z,order_failed,,desktop,,Sin stock suficiente,,10,1600,1,Tarjeta Gráfica RTX 4090,,sess_5hvlldll5vu,out_of_stock,1
+2026-05-23T05:04:28.086Z,order_attempted,,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_pmw5rhr0d5k,,3745
+2026-05-23T11:30:16.088Z,order_attempted,,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_yluhh1e7vnm,,3751
+2026-05-23T01:20:44.098Z,order_attempted,,mobile,,,,,600,2,Procesador Intel Core i9,,sess_9r5o3s1roir,,3752
+2026-05-23T01:09:12.100Z,order_attempted,,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_epk5fkju15j,,3749
+2026-05-23T03:10:54.100Z,order_attempted,,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_y0aslfehwa,,3748
+2026-05-22T22:52:08.102Z,order_attempted,,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_p647ek5jppm,,3753
+2026-05-23T13:17:44.106Z,order_attempted,,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_2rl2i8bpka6,,3746
+2026-05-23T01:06:51.108Z,order_attempted,,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_3aupbkky7kx,,3744
+2026-05-23T00:29:46.139Z,order_completed,,mobile,,,,50,85,10,Auriculares Gaming 7.1,1,sess_z011k96tf4,success,3751
+2026-05-23T21:25:21.142Z,order_completed,,desktop,,,,56,70,8,Mouse Gamer Inalámbrico,1,sess_lqws3bya05,success,3745
+2026-05-23T14:51:23.148Z,order_failed,,desktop,,Sin stock suficiente,,50,600,2,Procesador Intel Core i9,,sess_8st20qbfd0u,out_of_stock,3752
+2026-05-23T02:48:53.161Z,order_completed,,desktop,,,,55,70,8,Mouse Gamer Inalámbrico,1,sess_dgnjjvzbg8b,success,3746
+2026-05-23T14:27:15.177Z,user_registered,,desktop,comprador_48689@technova.com,,,35,,,,,sess_8bga3lwmuxh,success,3757
+2026-05-23T12:34:25.180Z,user_registered,,mobile,comprador_47845@technova.com,,,32,,,,,sess_o3nqgveihfb,success,3756
+2026-05-23T20:34:09.186Z,user_registered,,desktop,comprador_88896@technova.com,,,47,,,,,sess_q43a1ds3qd,success,3758
+2026-05-23T19:51:18.188Z,user_registered,,desktop,comprador_26584@technova.com,,,27,,,,,sess_1xi95rlvkgc,success,3759
+2026-05-23T08:04:40.190Z,order_completed,,desktop,,,,89,110,9,Unidad SSD 1TB NVMe M.2,1,sess_xjtxffff1q,success,3748
+2026-05-23T00:58:28.194Z,order_completed,,desktop,,,,86,85,10,Auriculares Gaming 7.1,1,sess_bjuhx9prgn6,success,3744
+2026-05-23T22:08:25.194Z,order_completed,,desktop,,,,92,90,7,Teclado Mecánico RGB,1,sess_6t41v71w3w,success,3753
+2026-05-23T00:00:30.195Z,order_completed,,desktop,,,,95,110,9,Unidad SSD 1TB NVMe M.2,1,sess_rmz8cww7ww,success,3749
+2026-05-22T23:42:50.205Z,user_registered,,mobile,comprador_32344@technova.com,,,11,,,,,sess_ttm4h4gtmye,success,3760
+2026-05-23T12:55:34.212Z,user_registered,,mobile,comprador_34843@technova.com,,,18,,,,,sess_ebboqsichdd,success,3763
+2026-05-23T01:18:19.213Z,user_registered,,mobile,comprador_55654@technova.com,,,23,,,,,sess_ixxjk2eshi,success,3761
+2026-05-23T16:33:43.213Z,user_registered,,desktop,comprador_41977@technova.com,,,18,,,,,sess_plkq3gtxhx9,success,3762
+2026-05-23T02:27:31.347Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_rq5dno8etec,,3754
+2026-05-23T13:53:25.360Z,user_registered,,desktop,navegante_13406@technova.com,,,12,,,,,sess_s02ypng3jio,success,3764
+2026-05-23T05:35:48.486Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_3ldudytg966,,3750
+2026-05-23T18:26:33.577Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_z08u8smls4l,,1
+2026-05-23T18:08:40.580Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_ro06k58347j,,2
+2026-05-22T23:44:36.078Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_tyhdr3saw7q,,1
+2026-05-23T19:07:38.081Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_rrne3ztzwa,,2
+2026-05-23T02:17:49.090Z,order_failed,,mobile,,Sin stock suficiente,,11,1600,1,Tarjeta Gráfica RTX 4090,,sess_fpcjwgkpux9,out_of_stock,1
+2026-05-23T00:06:18.092Z,order_failed,,mobile,,Sin stock suficiente,,11,1600,1,Tarjeta Gráfica RTX 4090,,sess_l1gzqydz3rp,out_of_stock,2
+2026-05-22T22:40:07.184Z,user_logged_in,,mobile,comprador_48689@technova.com,,,7,,,,,sess_j1jsksqqy8,success,3757
+2026-05-23T20:47:43.187Z,user_logged_in,,desktop,comprador_47845@technova.com,,,7,,,,,sess_uwp3wa5kbac,success,3756
+2026-05-23T02:50:55.193Z,user_logged_in,,desktop,comprador_88896@technova.com,,,6,,,,,sess_0uckfaums46,success,3758
+2026-05-23T04:56:07.195Z,user_logged_in,,desktop,comprador_26584@technova.com,,,7,,,,,sess_7z848i18mbo,success,3759
+2026-05-23T03:28:14.212Z,user_logged_in,,desktop,comprador_32344@technova.com,,,5,,,,,sess_3p0j2cu9qrn,success,3760
+2026-05-23T16:46:29.219Z,product_viewed,Periféricos,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_tu70j7wqmo,,3750
+2026-05-22T23:46:20.219Z,user_logged_in,,desktop,comprador_34843@technova.com,,,7,,,,,sess_j2qsm98cmt,success,3763
+2026-05-23T03:37:47.220Z,user_logged_in,,mobile,comprador_41977@technova.com,,,6,,,,,sess_y4dv56t9d1c,success,3762
+2026-05-23T15:57:06.223Z,user_logged_in,,mobile,comprador_55654@technova.com,,,9,,,,,sess_d2ovsv81l2e,success,3761
+2026-05-23T03:20:26.590Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_12i3s1icpan,,2
+2026-05-23T08:33:55.593Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_xvj1ejazrtj,,2
+2026-05-23T09:00:10.650Z,catalog_browsed,,desktop,,,10,5,,,,,sess_2f0y54tuj4u,success,3764
+2026-05-23T15:08:44.789Z,catalog_browsed,,mobile,,,10,8,,,,,sess_d02wwdz7bdu,success,3755
+2026-05-23T03:59:29.949Z,catalog_browsed,,desktop,,,10,10,,,,,sess_l5t95nb7jpb,success,
+2026-05-23T16:45:31.091Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_b3x0rhyn78a,,2
+2026-05-22T23:47:12.094Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_jylv3z57fe,,2
+2026-05-23T11:00:09.107Z,order_failed,,mobile,,Sin stock suficiente,,16,1600,1,Tarjeta Gráfica RTX 4090,,sess_nchav2m1r3,out_of_stock,2
+2026-05-23T16:06:35.107Z,order_failed,,mobile,,Sin stock suficiente,,13,1600,1,Tarjeta Gráfica RTX 4090,,sess_6ow1r6dmzn,out_of_stock,2
+2026-05-23T03:26:18.190Z,product_viewed,Componentes,mobile,,,,,350,4,Placa Base ASUS ROG,,sess_k72362q9tl,,3757
+2026-05-22T23:35:38.194Z,product_viewed,Periféricos,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_fk49zg6rqi,,3756
+2026-05-23T01:32:37.200Z,catalog_browsed,,mobile,,,10,6,,,,,sess_msr1nokdrxg,success,
+2026-05-23T22:28:44.200Z,product_viewed,Almacenamiento,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_143y7i4wqhdd,,3758
+2026-05-23T18:17:03.204Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_t9wlc62q6kc,,3759
+2026-05-23T00:10:18.217Z,product_viewed,Componentes,mobile,,,,,350,4,Placa Base ASUS ROG,,sess_pfvcef9y8kh,,3760
+2026-05-23T14:06:48.228Z,product_viewed,Componentes,mobile,,,,,120,5,Fuente de Poder 850W,,sess_xyg8rowkhf,,3763
+2026-05-23T01:17:32.230Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_my1vaqyyg9o,,3762
+2026-05-23T00:58:49.234Z,product_viewed,Componentes,mobile,,,,,350,4,Placa Base ASUS ROG,,sess_190510v0mxd,,3761
+2026-05-23T01:58:29.554Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_zyo9x9iy1am,,3764
+2026-05-23T16:15:18.607Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_i0gy7oqf18b,,1
+2026-05-23T19:34:26.607Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_q3gqyuexc6,,2
+2026-05-23T03:00:22.789Z,catalog_browsed,,desktop,,,10,5,,,,,sess_ico9wlbwtm,success,
+2026-05-23T02:18:00.845Z,product_viewed,Componentes,desktop,,,,,120,5,Fuente de Poder 850W,,sess_wlaaask4u98,,3755
+2026-05-23T21:37:01.018Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_pm6zs6y8uhc,,
+2026-05-23T03:38:45.108Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_gnrrk3fcj44,,2
+2026-05-23T15:21:09.108Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_pcj0jzd9bl,,1
+2026-05-23T01:00:14.122Z,order_failed,,desktop,,Sin stock suficiente,,14,1600,1,Tarjeta Gráfica RTX 4090,,sess_srl6q5ikbt,out_of_stock,2
+2026-05-23T04:43:33.126Z,order_failed,,desktop,,Sin stock suficiente,,18,1600,1,Tarjeta Gráfica RTX 4090,,sess_kj2zcxn8whh,out_of_stock,1
+2026-05-23T11:38:47.293Z,product_viewed,Audio,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_ckbfsyymp9b,,3764
+2026-05-23T18:42:21.300Z,user_registered,,desktop,navegante_87820@technova.com,,,7,,,,,sess_bewtmojbe86,success,3765
+2026-05-23T01:05:57.405Z,product_viewed,Periféricos,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_m9io79r5c0n,,
+2026-05-23T16:45:58.614Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_0lkunr7ghfh,,
+2026-05-23T03:24:37.623Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_3kgval3xy5,,2
+2026-05-23T05:55:06.627Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_1net08fpd5n,,2
+2026-05-23T03:55:11.672Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_x1ri2gctrwr,,
+2026-05-23T03:58:19.691Z,order_attempted,,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_pjwas3s8szr,,3757
+2026-05-23T15:53:59.695Z,order_attempted,,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_yun4ki48vwm,,3756
+2026-05-23T07:55:14.701Z,order_attempted,,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_45a8rhlbdnx,,3758
+2026-05-23T22:15:21.704Z,order_attempted,,mobile,,,,,350,4,Placa Base ASUS ROG,,sess_nx6kdcyt0x9,,3759
+2026-05-23T03:18:10.708Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_00cgd183s46ri,,3755
+2026-05-23T16:29:46.717Z,order_attempted,,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_begqg7p7woc,,3760
+2026-05-22T23:09:27.717Z,order_completed,,desktop,,,,26,350,4,Placa Base ASUS ROG,1,sess_nyiku2gbls,success,3757
+2026-05-23T18:46:18.722Z,order_completed,,desktop,,,,26,70,8,Mouse Gamer Inalámbrico,1,sess_lu7u6fxyoj,success,3756
+2026-05-23T00:11:34.727Z,user_registered,,desktop,navegante_42922@technova.com,,,18,,,,,sess_adng89890ru,success,3766
+2026-05-23T22:16:35.729Z,order_attempted,,desktop,,,,,120,5,Fuente de Poder 850W,,sess_z19b15cmbz,,3763
+2026-05-23T22:13:35.731Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_1qd7b8q3htr,,3762
+2026-05-23T02:30:50.734Z,order_attempted,,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_d2sorgh34uh,,3761
+2026-05-23T16:08:53.742Z,order_completed,,desktop,,,,38,350,4,Placa Base ASUS ROG,1,sess_tfs0z8f4w3,success,3759
+2026-05-23T02:12:11.747Z,order_completed,,desktop,,,,46,110,9,Unidad SSD 1TB NVMe M.2,1,sess_ynvtwm7rc9e,success,3758
+2026-05-23T00:35:29.759Z,order_completed,,desktop,,,,30,120,5,Fuente de Poder 850W,1,sess_noq36x9zqxh,success,3763
+2026-05-23T19:03:36.762Z,user_registered,,desktop,comprador_33674@technova.com,,,45,,,,,sess_wenv12lb6jg,success,3767
+2026-05-22T23:49:59.766Z,user_registered,,desktop,comprador_57885@technova.com,,,44,,,,,sess_k6t4k7jf3bl,success,3768
+2026-05-23T00:52:27.766Z,order_completed,,mobile,,,,49,350,4,Placa Base ASUS ROG,1,sess_2styxenikzf,success,3760
+2026-05-23T21:26:27.769Z,user_registered,,desktop,comprador_94334@technova.com,,,27,,,,,sess_hlgqmdkyabg,success,3769
+2026-05-23T04:04:07.773Z,user_registered,,desktop,comprador_12263@technova.com,,,26,,,,,sess_j9l28bfaq7a,success,3770
+2026-05-23T00:15:32.775Z,order_failed,,desktop,,Sin stock suficiente,,44,1600,1,Tarjeta Gráfica RTX 4090,,sess_9dsuy1c2mpq,out_of_stock,3762
+2026-05-23T05:10:32.781Z,order_failed,,mobile,,Sin stock suficiente,,46,350,4,Placa Base ASUS ROG,,sess_y1racicx8yb,out_of_stock,3761
+2026-05-23T00:25:00.786Z,user_registered,,desktop,comprador_86162@technova.com,,,11,,,,,sess_ot297ajjlj,success,3772
+2026-05-22T23:42:39.789Z,user_registered,,desktop,comprador_1189@technova.com,,,29,,,,,sess_s2wvs8zatof,success,3771
+2026-05-23T18:27:36.793Z,user_registered,,mobile,comprador_39018@technova.com,,,27,,,,,sess_idi7y8h0gno,success,3773
+2026-05-23T12:39:46.795Z,user_registered,,desktop,comprador_12836@technova.com,,,14,,,,,sess_6vxh4g7mol9,success,3774
+2026-05-23T00:35:42.123Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_s3ephfactj8,,2
+2026-05-23T02:46:43.127Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_h9moe23uzfa,,2
+2026-05-23T14:05:45.137Z,order_failed,,desktop,,Sin stock suficiente,,14,1600,1,Tarjeta Gráfica RTX 4090,,sess_hime2qroo9r,out_of_stock,2
+2026-05-23T01:52:14.141Z,order_failed,,mobile,,Sin stock suficiente,,13,1600,1,Tarjeta Gráfica RTX 4090,,sess_63lza4coy52,out_of_stock,2
+2026-05-23T21:17:53.630Z,catalog_browsed,,desktop,,,10,8,,,,,sess_05l3h19lc4yy,success,
+2026-05-23T19:38:16.637Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_99mma556wnw,,1
+2026-05-23T17:28:38.641Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_aglqnoprma,,1
+2026-05-23T01:00:10.769Z,user_logged_in,,mobile,comprador_33674@technova.com,,,6,,,,,sess_c1s0l6slqii,success,3767
+2026-05-23T19:01:35.775Z,user_logged_in,,desktop,comprador_57885@technova.com,,,8,,,,,sess_ei7k6cyjc69,success,3768
+2026-05-23T17:19:39.776Z,user_logged_in,,desktop,comprador_94334@technova.com,,,6,,,,,sess_60ylfzp4953,success,3769
+2026-05-23T18:38:46.781Z,user_logged_in,,mobile,comprador_12263@technova.com,,,7,,,,,sess_kuzszzsknq,success,3770
+2026-05-23T17:39:00.812Z,user_logged_in,,mobile,comprador_86162@technova.com,,,26,,,,,sess_zlz1q7jmltf,success,3772
+2026-05-23T21:20:50.814Z,user_logged_in,,mobile,comprador_1189@technova.com,,,25,,,,,sess_y7af7xtynl,success,3771
+2026-05-23T17:06:24.815Z,user_logged_in,,desktop,comprador_12836@technova.com,,,20,,,,,sess_nltp3cv7cf,success,3774
+2026-05-23T04:41:42.816Z,user_logged_in,,mobile,comprador_39018@technova.com,,,22,,,,,sess_ox811xi3jkq,success,3773
+2026-05-23T02:28:36.881Z,catalog_browsed,,desktop,,,10,7,,,,,sess_8mgfpftdlt,success,
+2026-05-23T11:16:53.921Z,catalog_browsed,,mobile,,,10,19,,,,,sess_w4n4xtfvdx,success,3765
+2026-05-22T23:18:40.139Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_nevp5osxtt,,1
+2026-05-23T14:11:27.143Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_rruj9nmtcj9,,1
+2026-05-23T02:34:02.195Z,order_failed,,desktop,,Sin stock suficiente,,56,1600,1,Tarjeta Gráfica RTX 4090,,sess_xkzioarltsq,out_of_stock,1
+2026-05-23T12:47:27.200Z,order_failed,,mobile,,Sin stock suficiente,,57,1600,1,Tarjeta Gráfica RTX 4090,,sess_7vbwiq8iqyq,out_of_stock,1
+2026-05-23T07:58:00.330Z,catalog_browsed,,desktop,,,10,8,,,,,sess_j6zxsnswozi,success,3766
+2026-05-23T17:09:25.476Z,catalog_browsed,,mobile,,,10,12,,,,,sess_xrl69191z1l,success,
+2026-05-23T21:34:41.696Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_yfnzs9uwtqg,,1
+2026-05-23T01:16:32.701Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_ogt0m40obw9,,1
+2026-05-23T02:08:18.704Z,product_viewed,Monitores,mobile,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_9ssrfp2feqt,,
+2026-05-23T21:38:33.775Z,product_viewed,Almacenamiento,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_rb4pt792ays,,3767
+2026-05-23T00:10:00.782Z,product_viewed,Periféricos,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_3es5msfmr4b,,3768
+2026-05-23T21:09:45.784Z,product_viewed,Periféricos,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_95yc78nv0g8,,3769
+2026-05-23T02:02:32.787Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_7ywy8uo8fnx,,3770
+2026-05-23T20:58:17.824Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_2l0tpn0m2nn,,3772
+2026-05-23T18:59:27.824Z,product_viewed,Memorias,mobile,,,,,150,3,Memoria RAM 32GB DDR5,,sess_37w6o1skd28,,3774
+2026-05-22T23:09:09.825Z,product_viewed,Memorias,mobile,,,,,150,3,Memoria RAM 32GB DDR5,,sess_7xntzghzcxm,,3771
+2026-05-23T19:32:25.827Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_yyhefadctwh,,3773
+2026-05-23T07:26:42.010Z,product_viewed,Memorias,mobile,,,,,150,3,Memoria RAM 32GB DDR5,,sess_ihug5x3i83f,,
+2026-05-23T05:13:40.023Z,user_registered,,desktop,navegante_65981@technova.com,,,13,,,,,sess_o5uuij95s,success,3775
+2026-05-23T21:18:49.041Z,product_viewed,Componentes,desktop,,,,,120,5,Fuente de Poder 850W,,sess_v9xa47cpya,,3765
+2026-05-23T17:15:44.070Z,user_registered,,desktop,navegante_50730@technova.com,,,29,,,,,sess_o7b75aqpzfe,success,3776
+2026-05-23T09:29:37.197Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_f0nfj53vblt,,1
+2026-05-23T18:42:37.202Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_0rrmfj0amrwb,,1
+2026-05-23T17:26:04.212Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_b9id98mj11,out_of_stock,1
+2026-05-22T22:54:59.216Z,order_failed,,desktop,,Sin stock suficiente,,14,1600,1,Tarjeta Gráfica RTX 4090,,sess_exf3uctceoa,out_of_stock,1
+2026-05-23T14:05:03.305Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_5s1gdbsujs8,,
+2026-05-22T23:23:11.675Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_grhiffwrlj,,3766
+2026-05-23T01:09:50.713Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_se5nl1xe2r,,2
+2026-05-22T23:46:45.716Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_n897po1a7wb,,2
+2026-05-23T16:17:44.214Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_7i6d9oi5db,,2
+2026-05-23T03:01:05.217Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_fozig8j6rzv,,2
+2026-05-22T22:42:54.236Z,order_failed,,desktop,,Sin stock suficiente,,22,1600,1,Tarjeta Gráfica RTX 4090,,sess_v1u1c6mzhs,out_of_stock,2
+2026-05-23T03:13:50.236Z,order_failed,,desktop,,Sin stock suficiente,,18,1600,1,Tarjeta Gráfica RTX 4090,,sess_5dpcfti57gk,out_of_stock,2
+2026-05-23T05:35:43.272Z,catalog_browsed,,desktop,,,10,6,,,,,sess_8jme1gsej0v,success,3775
+2026-05-23T01:29:06.276Z,order_attempted,,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_l1i1246qapm,,3767
+2026-05-23T21:14:22.283Z,order_attempted,,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_9qnp4zovdpb,,3768
+2026-05-23T03:17:09.284Z,order_attempted,,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_ywzi02azuyh,,3769
+2026-05-23T20:29:59.288Z,order_attempted,,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_03j97jt629u3,,3770
+2026-05-23T22:01:53.297Z,catalog_browsed,,desktop,,,10,8,,,,,sess_vpaenekk30m,success,
+2026-05-23T17:17:09.303Z,order_completed,,desktop,,,,27,110,9,Unidad SSD 1TB NVMe M.2,1,sess_0iblt288o72,success,3767
+2026-05-23T20:30:12.324Z,user_registered,,desktop,comprador_71726@technova.com,,,21,,,,,sess_rayd2wphgyr,success,3777
+2026-05-23T21:43:42.324Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_54ovc13u4ww,,3772
+2026-05-23T13:52:43.325Z,order_attempted,,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_dpwwkpqolbd,,3774
+2026-05-23T01:24:34.325Z,product_viewed,Componentes,mobile,,,,,600,2,Procesador Intel Core i9,,sess_dr0kttqregl,,3766
+2026-05-23T15:32:26.326Z,order_attempted,,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_4merd4ul02p,,3771
+2026-05-23T02:36:26.327Z,order_attempted,,mobile,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_p0l9sdilu7d,,3773
+2026-05-23T21:02:35.346Z,order_completed,,desktop,,,,62,90,7,Teclado Mecánico RGB,1,sess_wbusj2nk6ed,success,3769
+2026-05-23T16:59:11.351Z,order_failed,,desktop,,Sin stock suficiente,,27,1600,1,Tarjeta Gráfica RTX 4090,,sess_kzvyfr0rqb9,out_of_stock,3772
+2026-05-23T00:52:27.353Z,order_completed,,desktop,,,,65,70,8,Mouse Gamer Inalámbrico,1,sess_5qxnb8wfxif,success,3770
+2026-05-22T23:19:53.354Z,order_completed,,desktop,,,,71,90,7,Teclado Mecánico RGB,1,sess_qojlb4yk8de,success,3768
+2026-05-23T03:36:13.378Z,user_registered,,desktop,comprador_2841@technova.com,,,27,,,,,sess_n2qai8vlegk,success,3778
+2026-05-23T13:34:43.381Z,order_completed,,desktop,,,,56,150,3,Memoria RAM 32GB DDR5,1,sess_d1k3j0exykr,success,3774
+2026-05-23T18:35:12.387Z,order_completed,,desktop,,,,61,150,3,Memoria RAM 32GB DDR5,1,sess_akmgnz0m3sb,success,3771
+2026-05-23T18:14:37.397Z,user_registered,,mobile,comprador_23845@technova.com,,,51,,,,,sess_1qr8chqb58i,success,3779
+2026-05-23T21:33:59.399Z,user_registered,,mobile,comprador_16803@technova.com,,,45,,,,,sess_g4r60dpmzv,success,3780
+2026-05-23T03:27:15.402Z,order_completed,,desktop,,,,75,300,6,"Monitor Gaming 27"" 144Hz",1,sess_ex3tqa8gacu,success,3773
+2026-05-23T01:21:12.403Z,user_registered,,desktop,comprador_32106@technova.com,,,50,,,,,sess_0pp687i4yiub,success,3781
+2026-05-23T14:47:30.409Z,user_registered,,desktop,comprador_24350@technova.com,,,22,,,,,sess_9o61zzy4gdo,success,3782
+2026-05-23T00:08:50.409Z,user_registered,,desktop,comprador_48877@technova.com,,,27,,,,,sess_tskqm7fyq7,success,3783
+2026-05-23T01:25:24.416Z,user_registered,,desktop,comprador_93893@technova.com,,,14,,,,,sess_uj5p5p3eixa,success,3784
+2026-05-23T22:12:39.489Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_mr18zizmu6,,
+2026-05-23T11:18:32.736Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_7rpwszvjbfc,,2
+2026-05-23T00:24:28.737Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_b9i1txy0i08,,1
+2026-05-23T18:48:10.882Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_pzco69068ja,,
+2026-05-23T03:58:16.213Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_5rcf8crg3y,,3775
+2026-05-23T14:55:43.237Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_qnpm2kaaqi,,2
+2026-05-23T12:50:01.237Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_9sm1g2vm9w,,1
+2026-05-22T23:09:06.252Z,order_failed,,mobile,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_2mg8lomui8u,out_of_stock,2
+2026-05-23T21:53:18.252Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_gdj2jc30hxu,out_of_stock,1
+2026-05-23T21:45:29.335Z,user_logged_in,,desktop,comprador_71726@technova.com,,,10,,,,,sess_ilxhdeexhcr,success,3777
+2026-05-23T04:35:28.398Z,user_logged_in,,desktop,comprador_2841@technova.com,,,19,,,,,sess_ertmjz44yda,success,3778
+2026-05-23T00:02:54.429Z,catalog_browsed,,desktop,,,10,34,,,,,sess_b632rfurnw,success,
+2026-05-22T22:56:14.440Z,user_logged_in,,desktop,comprador_16803@technova.com,,,41,,,,,sess_j9wlcrfrxla,success,3780
+2026-05-23T14:46:28.446Z,user_logged_in,,desktop,comprador_23845@technova.com,,,48,,,,,sess_ga1o2tbj0jk,success,3779
+2026-05-23T13:04:41.448Z,user_logged_in,,mobile,comprador_24350@technova.com,,,39,,,,,sess_kxlggcs9kp,success,3782
+2026-05-23T00:48:29.450Z,user_logged_in,,desktop,comprador_32106@technova.com,,,44,,,,,sess_fktk61wy38i,success,3781
+2026-05-23T16:43:38.456Z,user_logged_in,,desktop,comprador_93893@technova.com,,,38,,,,,sess_8h2ckfk0tdq,success,3784
+2026-05-23T02:23:09.457Z,user_logged_in,,mobile,comprador_48877@technova.com,,,48,,,,,sess_72sr2pa5w4e,success,3783
+2026-05-23T19:48:31.719Z,catalog_browsed,,desktop,,,10,10,,,,,sess_nsjagx2lm5m,success,3776
+2026-05-23T20:45:33.752Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_i8exz7f4nl,,2
+2026-05-23T21:36:21.753Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_cf1fo11sqmn,,2
+2026-05-23T02:31:37.074Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_djge22paxrt,,
+2026-05-23T06:40:20.253Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_28mrbv389pg,,2
+2026-05-23T04:47:05.254Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_as9kuvar6aq,,2
+2026-05-23T17:11:33.267Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_hy2boilcwga,,3776
+2026-05-23T12:00:29.271Z,order_failed,,desktop,,Sin stock suficiente,,18,1600,1,Tarjeta Gráfica RTX 4090,,sess_pi01ojj961g,out_of_stock,2
+2026-05-23T21:52:07.272Z,order_failed,,desktop,,Sin stock suficiente,,18,1600,1,Tarjeta Gráfica RTX 4090,,sess_9mbs9ti8716,out_of_stock,2
+2026-05-23T03:33:02.352Z,product_viewed,Almacenamiento,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_9ikx2read7b,,3777
+2026-05-23T22:10:10.403Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_0kj2ermvy7sm,,3778
+2026-05-23T22:21:48.408Z,product_viewed,Periféricos,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_keiwcypsp9j,,3775
+2026-05-22T23:49:30.415Z,user_registered,,desktop,navegante_27753@technova.com,,,7,,,,,sess_gimjkwi59o4,success,3785
+2026-05-23T17:55:59.447Z,product_viewed,Componentes,mobile,,,,,350,4,Placa Base ASUS ROG,,sess_mfrvx8q4hm,,3780
+2026-05-23T02:29:34.454Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_5rboa43vzfj,,3779
+2026-05-23T13:24:59.456Z,product_viewed,Almacenamiento,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_jrpd51pt7cg,,3782
+2026-05-23T02:59:10.457Z,product_viewed,Componentes,mobile,,,,,120,5,Fuente de Poder 850W,,sess_mvh4bkhhzw,,3781
+2026-05-23T01:00:44.462Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_83fqlbpw6mj,,3783
+2026-05-23T18:20:44.462Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_2y4ajtz1ufn,,3784
+2026-05-23T00:30:33.634Z,product_viewed,Monitores,mobile,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_zeodr9sloks,,
+2026-05-23T00:13:25.643Z,user_registered,,desktop,navegante_52669@technova.com,,,9,,,,,sess_obpk1xvb6x,success,3786
+2026-05-23T00:07:52.771Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_e5xay4pf6ed,,1
+2026-05-23T21:21:31.772Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_8m3ds29pk2m,,1
+2026-05-23T13:27:16.058Z,catalog_browsed,,desktop,,,10,6,,,,,sess_y420pm9lnx,success,
+2026-05-23T18:34:00.195Z,catalog_browsed,,desktop,,,10,6,,,,,sess_ujhkpa7bh09,success,
+2026-05-23T02:04:41.272Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_60w8frx5nqx,,1
+2026-05-23T19:01:34.273Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_p608sbmizz,,1
+2026-05-23T19:17:43.286Z,order_failed,,desktop,,Sin stock suficiente,,13,1600,1,Tarjeta Gráfica RTX 4090,,sess_v5b6calz79a,out_of_stock,1
+2026-05-22T23:33:15.287Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_1yfeuicgbom,out_of_stock,1
+2026-05-23T16:39:41.759Z,product_viewed,Almacenamiento,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_xkjgb2u818,,3776
+2026-05-23T21:20:56.766Z,user_registered,,mobile,navegante_66627@technova.com,,,7,,,,,sess_mchjxtll648,success,3787
+2026-05-23T03:31:14.780Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_r8jji2vpzvo,,
+2026-05-23T01:05:00.787Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_b96oiea4lve,,1
+2026-05-23T01:59:25.789Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_4jj6b315o9q,,1
+2026-05-23T16:01:06.833Z,catalog_browsed,,desktop,,,10,6,,,,,sess_qdswpqll0oi,success,3785
+2026-05-23T03:46:52.853Z,order_attempted,,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_i1hel3youaj,,3777
+2026-05-23T15:00:31.870Z,order_completed,,mobile,,,,17,110,9,Unidad SSD 1TB NVMe M.2,1,sess_ebs8aaydh8q,success,3777
+2026-05-23T18:09:46.877Z,user_registered,,desktop,comprador_56890@technova.com,,,7,,,,,sess_gpo19swfqb7,success,3788
+2026-05-23T22:00:55.903Z,order_attempted,,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_u4n9yxjc55c,,3778
+2026-05-23T11:04:13.920Z,order_completed,,desktop,,,,16,300,6,"Monitor Gaming 27"" 144Hz",1,sess_o1e448ydemd,success,3778
+2026-05-23T05:46:45.930Z,user_registered,,desktop,comprador_57195@technova.com,,,10,,,,,sess_rk8l5tfd9kn,success,3789
+2026-05-23T02:49:56.948Z,order_attempted,,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_1jgemoqagfx,,3780
+2026-05-23T14:04:27.954Z,order_attempted,,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_pn3fwbm78cs,,3779
+2026-05-23T06:11:55.957Z,order_attempted,,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_phbqteysnli,,3782
+2026-05-23T02:43:58.958Z,order_attempted,,desktop,,,,,120,5,Fuente de Poder 850W,,sess_4zfceqr0rps,,3781
+2026-05-23T22:13:57.962Z,order_attempted,,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_204dr5kbk7n,,3783
+2026-05-23T01:59:01.963Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_n6dh8ii1k3,,3784
+2026-05-23T00:28:03.975Z,order_failed,,mobile,,Sin stock suficiente,,27,350,4,Placa Base ASUS ROG,,sess_jj9ybdfz8xf,out_of_stock,3780
+2026-05-23T16:35:42.000Z,order_completed,,desktop,,,,42,110,9,Unidad SSD 1TB NVMe M.2,1,sess_rc6rci16udl,success,3782
+2026-05-23T22:13:53.009Z,order_failed,,desktop,,Sin stock suficiente,,46,1600,1,Tarjeta Gráfica RTX 4090,,sess_7o5nc8dffno,out_of_stock,3784
+2026-05-23T01:43:28.016Z,user_registered,,mobile,comprador_98681@technova.com,,,40,,,,,sess_l0dk1qnbxdo,success,3790
+2026-05-23T22:10:19.020Z,order_completed,,desktop,,,,66,70,8,Mouse Gamer Inalámbrico,1,sess_s5xyfwl71m,success,3779
+2026-05-23T15:47:53.024Z,order_completed,,desktop,,,,62,300,6,"Monitor Gaming 27"" 144Hz",1,sess_jxfpwlwyol9,success,3783
+2026-05-23T13:37:38.030Z,user_registered,,desktop,comprador_35214@technova.com,,,30,,,,,sess_1pern5i08sf,success,3791
+2026-05-23T02:52:06.032Z,order_completed,,desktop,,,,74,120,5,Fuente de Poder 850W,1,sess_78unf2uitog,success,3781
+2026-05-23T16:37:33.035Z,user_registered,,desktop,comprador_74502@technova.com,duplicate_or_error,,26,,,,,sess_ko6owudmww,failed,
+2026-05-22T22:44:48.041Z,user_registered,,desktop,comprador_10004@technova.com,,,21,,,,,sess_x724jpdlyl,success,3792
+2026-05-23T15:08:45.052Z,user_registered,,desktop,comprador_751@technova.com,,,28,,,,,sess_ccf4c90kz9p,success,3793
+2026-05-23T21:29:16.054Z,user_registered,,desktop,comprador_35958@technova.com,,,22,,,,,sess_06n0oygbhxlg,success,3794
+2026-05-23T22:28:49.056Z,user_registered,,mobile,comprador_56526@technova.com,,,20,,,,,sess_qudw3jsu51k,success,3795
+2026-05-23T00:06:37.287Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_pvcinfesrcd,,1
+2026-05-22T23:05:42.290Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_vdnx7i17yg,,1
+2026-05-23T17:36:04.302Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_n7b7v1co0l,out_of_stock,1
+2026-05-23T02:08:00.303Z,order_failed,,desktop,,Sin stock suficiente,,13,1600,1,Tarjeta Gráfica RTX 4090,,sess_0d8j7aaq6d8o,out_of_stock,1
+2026-05-23T00:40:42.340Z,product_viewed,Componentes,desktop,,,,,120,5,Fuente de Poder 850W,,sess_uul3f26t1r,,3785
+2026-05-23T14:28:24.352Z,user_registered,,desktop,navegante_70257@technova.com,,,12,,,,,sess_s9c1bg3jmz,success,3796
+2026-05-23T02:05:35.406Z,product_viewed,Periféricos,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_ndpxnyjp0n,,
+2026-05-23T19:36:36.486Z,catalog_browsed,,desktop,,,10,4,,,,,sess_ykgdwrifkwd,success,3786
+2026-05-23T19:01:43.803Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_bww1r8qtue,,2
+2026-05-23T00:42:23.804Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_bnp3rcno1vl,,2
+2026-05-23T21:19:07.889Z,user_logged_in,,desktop,comprador_56890@technova.com,,,11,,,,,sess_u5e26bto42,success,3788
+2026-05-23T15:05:42.936Z,user_logged_in,,desktop,comprador_57195@technova.com,,,5,,,,,sess_9bi74xtvhc6,success,3789
+2026-05-23T05:02:13.024Z,user_logged_in,,desktop,comprador_98681@technova.com,,,7,,,,,sess_mnwju9yfr1a,success,3790
+2026-05-23T00:30:01.037Z,user_logged_in,,desktop,comprador_35214@technova.com,,,6,,,,,sess_bd5ql4h9b7p,success,3791
+2026-05-23T19:03:02.046Z,user_logged_in,,desktop,comprador_10004@technova.com,,,5,,,,,sess_4kv3im633c,success,3792
+2026-05-23T02:30:00.055Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_1fk5mtqha73,,3786
+2026-05-23T02:49:44.062Z,user_logged_in,,desktop,comprador_35958@technova.com,,,8,,,,,sess_nwquy9z56,success,3794
+2026-05-22T23:07:42.063Z,user_logged_in,,desktop,comprador_751@technova.com,,,10,,,,,sess_oy6uuo0sldi,success,3793
+2026-05-23T03:36:41.064Z,user_logged_in,,desktop,comprador_56526@technova.com,,,8,,,,,sess_1vveleldr6f,success,3795
+2026-05-23T01:10:54.138Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_bupctxlxd5t,,
+2026-05-23T02:41:19.304Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_9v7phj6js1g,,2
+2026-05-23T03:08:56.304Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_28dxyn2lf0k,,2
+2026-05-23T17:07:48.322Z,order_failed,,mobile,,Sin stock suficiente,,18,1600,1,Tarjeta Gráfica RTX 4090,,sess_x6twfyos0w,out_of_stock,2
+2026-05-23T17:29:47.322Z,order_failed,,desktop,,Sin stock suficiente,,17,1600,1,Tarjeta Gráfica RTX 4090,,sess_4bhsgwzfgph,out_of_stock,2
+2026-05-23T01:13:00.444Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_zun15uvtkuq,,
+2026-05-23T21:49:05.526Z,catalog_browsed,,mobile,,,10,6,,,,,sess_xmv9ldlsgu,success,3796
+2026-05-23T17:14:47.822Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_rwmotykstfm,,1
+2026-05-23T22:31:55.823Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_vdjqnryf6u,,1
+2026-05-23T18:31:16.899Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_4u239q7p8yg,,3788
+2026-05-23T04:11:21.945Z,product_viewed,Almacenamiento,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_i5urntaxvh,,3789
+2026-05-23T17:26:28.030Z,product_viewed,Almacenamiento,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_duoxdvot6nk,,3790
+2026-05-23T17:49:13.043Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_1ks4to6urds,,3791
+2026-05-22T22:42:14.051Z,product_viewed,Componentes,desktop,,,,,120,5,Fuente de Poder 850W,,sess_bq0t7xqcecs,,3792
+2026-05-23T00:13:59.069Z,product_viewed,Componentes,mobile,,,,,120,5,Fuente de Poder 850W,,sess_je0xphw8kff,,3793
+2026-05-23T09:24:07.071Z,product_viewed,Periféricos,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_n8ndqimegx,,3794
+2026-05-23T22:12:07.075Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_1lml3y0myxrh,,3795
+2026-05-23T22:20:41.322Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_6n9ujv4l053,,1
+2026-05-23T19:30:06.323Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_gggxvq4sr48,,1
+2026-05-23T20:59:48.338Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_3uwqypvfjh6,out_of_stock,1
+2026-05-23T03:02:00.338Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_63nrev0nq0a,out_of_stock,1
+2026-05-23T02:02:01.561Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_ad35gpk8gim,,3796
+2026-05-22T23:34:31.561Z,catalog_browsed,,mobile,,,10,5,,,,,sess_pweloc4hmgl,success,
+2026-05-23T01:51:25.643Z,catalog_browsed,,mobile,,,10,7,,,,,sess_t1471k9hgd9,success,3787
+2026-05-23T02:02:51.839Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_0mgi59k1qdg,,2
+2026-05-23T22:24:46.839Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_uauq8fsm3ze,,1
+2026-05-23T16:44:14.238Z,product_viewed,Componentes,mobile,,,,,350,4,Placa Base ASUS ROG,,sess_yyhz352fyrl,,
+2026-05-23T19:20:06.253Z,user_registered,,desktop,navegante_55888@technova.com,,,15,,,,,sess_o1lqzvh6nc,success,3797
+2026-05-23T21:03:16.339Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_ktsgpyjskq,,2
+2026-05-23T18:39:54.339Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_l0ydnfzlmw9,,1
+2026-05-23T10:47:48.362Z,order_failed,,desktop,,Sin stock suficiente,,23,1600,1,Tarjeta Gráfica RTX 4090,,sess_0tttpooev9,out_of_stock,2
+2026-05-23T03:15:03.364Z,order_failed,,desktop,,Sin stock suficiente,,25,1600,1,Tarjeta Gráfica RTX 4090,,sess_je6041crxoo,out_of_stock,1
+2026-05-23T12:24:22.400Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_bg40xj5jk1o,,3788
+2026-05-23T04:09:12.411Z,order_failed,,mobile,,Sin stock suficiente,,10,1600,1,Tarjeta Gráfica RTX 4090,,sess_yev62p0zfdq,out_of_stock,3788
+2026-05-23T04:45:43.420Z,user_registered,,mobile,comprador_91438@technova.com,,,8,,,,,sess_0g3996363beu,success,3798
+2026-05-23T03:57:44.440Z,catalog_browsed,,desktop,,,10,5,,,,,sess_hureevdtmyw,success,
+2026-05-23T05:04:30.446Z,order_attempted,,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_c3jm2qylndf,,3789
+2026-05-23T21:44:23.454Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_dmrwyjahi7f,,3787
+2026-05-23T17:29:41.461Z,order_completed,,mobile,,,,14,110,9,Unidad SSD 1TB NVMe M.2,1,sess_l53yncgpr2d,success,3789
+2026-05-23T17:26:38.469Z,user_registered,,desktop,comprador_16375@technova.com,,,8,,,,,sess_q1fo5a2qkrq,success,3799
+2026-05-23T10:47:45.531Z,order_attempted,,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_twplpzqsgz,,3790
+2026-05-23T05:50:45.544Z,order_attempted,,mobile,,,,,600,2,Procesador Intel Core i9,,sess_zwfhmjrns2,,3791
+2026-05-23T15:14:05.545Z,order_completed,,mobile,,,,14,110,9,Unidad SSD 1TB NVMe M.2,1,sess_xrp4lhdl39,success,3790
+2026-05-23T15:06:41.551Z,order_attempted,,mobile,,,,,120,5,Fuente de Poder 850W,,sess_w6xymlyeq49,,3792
+2026-05-22T23:51:59.565Z,order_failed,,desktop,,Sin stock suficiente,,21,600,2,Procesador Intel Core i9,,sess_0hdshcdeiz3r,out_of_stock,3791
+2026-05-23T16:31:52.565Z,user_registered,,desktop,comprador_96632@technova.com,,,20,,,,,sess_guyc0pnxx7,success,3800
+2026-05-23T19:09:10.569Z,order_attempted,,desktop,,,,,120,5,Fuente de Poder 850W,,sess_v1w8nt8cmtd,,3793
+2026-05-23T02:21:47.571Z,order_attempted,,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_bfmkrmo0fgd,,3794
+2026-05-22T23:42:00.576Z,order_attempted,,desktop,,,,,600,2,Procesador Intel Core i9,,sess_rxzygilc23k,,3795
+2026-05-23T00:15:02.586Z,user_registered,,desktop,comprador_52714@technova.com,,,21,,,,,sess_vuhe0cn2ggh,success,3801
+2026-05-23T20:57:31.594Z,order_completed,,mobile,,,,43,120,5,Fuente de Poder 850W,1,sess_je0j0a7i5pe,success,3792
+2026-05-23T02:16:05.607Z,order_failed,,mobile,,Sin stock suficiente,,31,600,2,Procesador Intel Core i9,,sess_tig6zq8otj,out_of_stock,3795
+2026-05-23T01:43:05.607Z,order_completed,,mobile,,,,35,90,7,Teclado Mecánico RGB,1,sess_5qbpbggpprj,success,3794
+2026-05-23T04:03:11.614Z,user_registered,,desktop,comprador_43987@technova.com,,,20,,,,,sess_0o4cvxk4bxul,success,3802
+2026-05-22T22:39:50.615Z,order_completed,,mobile,,,,45,120,5,Fuente de Poder 850W,1,sess_gmgo17f59hh,success,3793
+2026-05-23T18:03:44.626Z,user_registered,,desktop,comprador_41080@technova.com,,,19,,,,,sess_1hxsn08d787,success,3803
+2026-05-23T03:56:17.629Z,user_registered,,desktop,comprador_49290@technova.com,,,22,,,,,sess_ot80e5nvhr,success,3804
+2026-05-23T15:22:47.631Z,user_registered,,desktop,comprador_945@technova.com,,,16,,,,,sess_gsxvbx7c75d,success,3805
+2026-05-23T03:10:53.863Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_587xd8bh1gs,,2
+2026-05-23T20:31:19.865Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_o6o5bj4qilj,,1
+2026-05-23T22:23:06.866Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_8u6gvyv8015,,3796
+2026-05-23T12:27:48.877Z,user_registered,,desktop,navegante_85660@technova.com,,,11,,,,,sess_wdvw2q6736k,success,3806
+2026-05-23T05:18:05.968Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_ijd89qcfyih,,3787
+2026-05-23T21:45:21.977Z,user_registered,,desktop,navegante_67075@technova.com,,,9,,,,,sess_qtsgz9768dh,success,3807
+2026-05-23T16:46:10.011Z,product_viewed,Almacenamiento,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_etz1x60is7o,,
+2026-05-23T12:49:18.021Z,user_registered,,desktop,navegante_71820@technova.com,,,10,,,,,sess_ohlw6rcent9,success,3808
+2026-05-23T11:27:22.173Z,catalog_browsed,,desktop,,,10,7,,,,,sess_4u768z8jrii,success,
+2026-05-23T00:49:44.363Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_3ygy0jphqmu,,2
+2026-05-23T17:41:26.365Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_xyakhw1qpa,,1
+2026-05-23T16:05:56.386Z,order_failed,,desktop,,Sin stock suficiente,,22,1600,1,Tarjeta Gráfica RTX 4090,,sess_vgy18oo1vth,out_of_stock,2
+2026-05-23T11:39:57.388Z,order_failed,,mobile,,Sin stock suficiente,,22,1600,1,Tarjeta Gráfica RTX 4090,,sess_cw058f6cv0o,out_of_stock,1
+2026-05-22T23:01:37.440Z,user_logged_in,,desktop,comprador_91438@technova.com,,,19,,,,,sess_ihbjn8shx5,success,3798
+2026-05-23T20:49:41.481Z,user_logged_in,,desktop,comprador_16375@technova.com,,,11,,,,,sess_rcdaes19e8,success,3799
+2026-05-23T03:28:39.575Z,user_logged_in,,mobile,comprador_96632@technova.com,,,9,,,,,sess_1s9kei65odt,success,3800
+2026-05-23T03:01:06.595Z,user_logged_in,,desktop,comprador_52714@technova.com,,,8,,,,,sess_q8cgp0uxr3d,success,3801
+2026-05-23T15:18:41.623Z,user_logged_in,,desktop,comprador_43987@technova.com,,,8,,,,,sess_vikz6k17dz,success,3802
+2026-05-23T20:42:46.640Z,user_logged_in,,mobile,comprador_41080@technova.com,,,13,,,,,sess_6x8m366p7vq,success,3803
+2026-05-23T14:26:57.645Z,user_logged_in,,desktop,comprador_49290@technova.com,,,16,,,,,sess_3s4pdfp6kic,success,3804
+2026-05-23T00:53:20.648Z,user_logged_in,,mobile,comprador_945@technova.com,,,17,,,,,sess_a8pgkihembp,success,3805
+2026-05-23T15:54:40.702Z,catalog_browsed,,desktop,,,10,6,,,,,sess_f8i2m9bqi57,success,3797
+2026-05-23T01:52:35.887Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_n4seh9dt1k,,2
+2026-05-23T03:34:58.889Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_1s234xceovd,,2
+2026-05-22T23:55:21.230Z,product_viewed,Audio,mobile,,,,,85,10,Auriculares Gaming 7.1,,sess_1cwph32bi7j,,3797
+2026-05-23T03:21:39.388Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_jb5vflqzktc,,2
+2026-05-23T02:54:06.390Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_f7gv6gq6iar,,2
+2026-05-22T22:41:42.404Z,order_failed,,desktop,,Sin stock suficiente,,16,1600,1,Tarjeta Gráfica RTX 4090,,sess_pfvu5i5dlt,out_of_stock,2
+2026-05-23T17:18:59.409Z,order_failed,,desktop,,Sin stock suficiente,,19,1600,1,Tarjeta Gráfica RTX 4090,,sess_ud4qu4jiwrp,out_of_stock,2
+2026-05-23T14:08:03.447Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_vtqdhm1cfxl,,3798
+2026-05-23T14:52:25.489Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_0jh38v1r64e9,,3799
+2026-05-23T15:14:21.522Z,catalog_browsed,,desktop,,,10,7,,,,,sess_mifk0pyzzzn,success,3808
+2026-05-23T15:53:50.584Z,product_viewed,Periféricos,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_6963051hxn5,,3800
+2026-05-23T05:51:28.604Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_qzr3mcm15xf,,3801
+2026-05-23T00:47:15.625Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_oyu5y3miyn,,
+2026-05-23T00:46:21.637Z,product_viewed,Almacenamiento,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_97l88460yc,,3802
+2026-05-23T21:18:09.644Z,user_registered,,mobile,navegante_68351@technova.com,,,19,,,,,sess_g6w5eczxweg,success,3809
+2026-05-23T16:01:49.648Z,product_viewed,Audio,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_0xh9test3e7,,3803
+2026-05-23T18:22:10.651Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_3mkonf71joe,,3804
+2026-05-23T21:41:16.654Z,product_viewed,Periféricos,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_5fvphxey2t2,,3805
+2026-05-23T03:19:02.748Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_b8cmf82laxf,,3797
+2026-05-23T16:02:12.760Z,user_registered,,mobile,navegante_91355@technova.com,,,12,,,,,sess_lnvmi8wdm9,success,3810
+2026-05-23T22:24:20.905Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_eoleq4v04r4,,2
+2026-05-23T18:51:41.910Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_4w8htwi5khe,,2
+2026-05-22T23:45:03.036Z,catalog_browsed,,desktop,,,10,7,,,,,sess_zea3ryx4gqe,success,3807
+2026-05-23T04:13:31.275Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_hqin4acwxf5,,3808
+2026-05-23T20:24:11.406Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_s6qtc44hl2,,2
+2026-05-23T01:39:15.411Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_ie3ugnqvupp,,2
+2026-05-23T17:15:58.421Z,order_failed,,desktop,,Sin stock suficiente,,14,1600,1,Tarjeta Gráfica RTX 4090,,sess_psde7xibyp,out_of_stock,2
+2026-05-23T16:32:03.424Z,order_failed,,desktop,,Sin stock suficiente,,13,1600,1,Tarjeta Gráfica RTX 4090,,sess_fhyskzy550m,out_of_stock,2
+2026-05-23T01:15:46.573Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_kikw9rld0gq,,3807
+2026-05-22T22:42:32.823Z,catalog_browsed,,desktop,,,10,7,,,,,sess_t8d7my57rts,success,3806
+2026-05-23T01:26:39.834Z,catalog_browsed,,mobile,,,10,5,,,,,sess_re8uh75mmq,success,3810
+2026-05-23T18:09:28.922Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_4w37pmcop9,,2
+2026-05-23T01:10:48.925Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_pp0x7om5t9,,1
+2026-05-23T00:10:35.947Z,order_attempted,,mobile,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_vzd6otuk3p,,3798
+2026-05-23T22:14:58.965Z,order_completed,,desktop,,,,18,300,6,"Monitor Gaming 27"" 144Hz",1,sess_nv0eg3s92xm,success,3798
+2026-05-23T16:42:25.975Z,user_registered,,desktop,comprador_64465@technova.com,,,9,,,,,sess_c7x1lv3innh,success,3811
+2026-05-23T05:07:50.990Z,order_attempted,,mobile,,,,,600,2,Procesador Intel Core i9,,sess_pe7fs2y98g,,3799
+2026-05-22T23:02:18.999Z,order_failed,,mobile,,Sin stock suficiente,,9,600,2,Procesador Intel Core i9,,sess_1u7ym8sotdf,out_of_stock,3799
+2026-05-23T05:52:41.007Z,user_registered,,desktop,comprador_27592@technova.com,,,7,,,,,sess_t9i7da6rvo,success,3812
+2026-05-23T14:22:13.085Z,order_attempted,,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_aiiv3pui4n,,3800
+2026-05-23T19:08:37.099Z,order_completed,,mobile,,,,14,90,7,Teclado Mecánico RGB,1,sess_zk10fb4g6on,success,3800
+2026-05-23T00:42:32.104Z,order_attempted,,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_99vtsejwf2g,,3801
+2026-05-23T05:15:09.119Z,user_registered,,desktop,comprador_74520@technova.com,,,20,,,,,sess_f9yxj81bu98,success,3813
+2026-05-22T23:59:47.125Z,order_failed,,desktop,,Sin stock suficiente,,20,350,4,Placa Base ASUS ROG,,sess_qw0j0skt2z7,out_of_stock,3801
+2026-05-22T23:16:08.133Z,user_registered,,desktop,comprador_33180@technova.com,,,8,,,,,sess_edt3imjb6l6,success,3814
+2026-05-23T17:22:16.138Z,order_attempted,,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_tl52w8cul8,,3802
+2026-05-23T18:17:42.149Z,order_attempted,,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_ynwsmi57eui,,3803
+2026-05-23T03:57:20.152Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_k8jhxwmt90h,,3804
+2026-05-23T14:29:48.155Z,order_attempted,,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_jkcxe3emsti,,3805
+2026-05-23T01:45:01.167Z,order_completed,,mobile,,,,29,110,9,Unidad SSD 1TB NVMe M.2,1,sess_i5x2gsfaz5g,success,3802
+2026-05-23T01:28:35.183Z,order_failed,,desktop,,Sin stock suficiente,,31,1600,1,Tarjeta Gráfica RTX 4090,,sess_mbbydlyv59,out_of_stock,3804
+2026-05-22T23:41:36.187Z,order_completed,,mobile,,,,38,85,10,Auriculares Gaming 7.1,1,sess_2rb20mus7w4,success,3803
+2026-05-23T01:42:03.194Z,order_completed,,desktop,,,,39,70,8,Mouse Gamer Inalámbrico,1,sess_1wfd8tgdr3p,success,3805
+2026-05-23T17:33:13.199Z,user_registered,,desktop,comprador_90634@technova.com,,,32,,,,,sess_61g3ijbfkum,success,3815
+2026-05-23T14:47:27.208Z,user_registered,,mobile,comprador_50876@technova.com,,,20,,,,,sess_fzalz6l319a,success,3816
+2026-05-23T18:50:20.211Z,user_registered,,desktop,comprador_17718@technova.com,,,28,,,,,sess_75prfr3j4x8,success,3817
+2026-05-23T05:54:27.215Z,user_registered,,desktop,comprador_74238@technova.com,,,21,,,,,sess_llb8pv2nmzj,success,3818
+2026-05-22T23:15:21.422Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_uvh7ine6kdo,,2
+2026-05-23T16:07:20.425Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_gj04ryzj4o,,1
+2026-05-23T17:58:16.437Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_4mbu5ulm0v3,out_of_stock,2
+2026-05-23T16:46:52.442Z,order_failed,,desktop,,Sin stock suficiente,,17,1600,1,Tarjeta Gráfica RTX 4090,,sess_3rexd8mapnw,out_of_stock,1
+2026-05-22T23:22:37.571Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_c3mdta76dga,,3807
+2026-05-23T15:33:45.861Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_pk1q8l6wcg,,3810
+2026-05-23T15:33:58.873Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_bv30z6qayxo,,3806
+2026-05-23T11:53:05.938Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_eljy48gt9f,,1
+2026-05-23T01:03:51.943Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_nkszc0m833f,,1
+2026-05-23T02:35:52.980Z,catalog_browsed,,mobile,,,10,5,,,,,sess_6752y5vfcay,success,
+2026-05-23T21:31:29.982Z,user_logged_in,,mobile,comprador_64465@technova.com,,,7,,,,,sess_8he5y3p4w85,success,3811
+2026-05-23T20:12:09.013Z,user_logged_in,,mobile,comprador_27592@technova.com,,,6,,,,,sess_98f68dut26p,success,3812
+2026-05-23T01:12:59.128Z,user_logged_in,,desktop,comprador_74520@technova.com,,,8,,,,,sess_letr2prz1u,success,3813
+2026-05-23T00:55:12.141Z,user_logged_in,,desktop,comprador_33180@technova.com,,,7,,,,,sess_3ilxeqg6k27,success,3814
+2026-05-23T21:17:41.204Z,user_logged_in,,desktop,comprador_90634@technova.com,,,5,,,,,sess_rxcbyzldisa,success,3815
+2026-05-23T19:12:43.222Z,user_logged_in,,mobile,comprador_50876@technova.com,,,14,,,,,sess_evylnmw41p7,success,3816
+2026-05-22T23:42:09.225Z,user_logged_in,,desktop,comprador_74238@technova.com,,,8,,,,,sess_a6hxpf0bnkd,success,3818
+2026-05-23T01:31:16.228Z,user_logged_in,,desktop,comprador_17718@technova.com,,,17,,,,,sess_910rjdl6ey4,success,3817
+2026-05-23T00:03:37.439Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_4d120cmhau7,,1
+2026-05-23T02:59:25.444Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_edlo2dnoiai,,1
+2026-05-22T23:06:15.457Z,order_failed,,mobile,,Sin stock suficiente,,17,1600,1,Tarjeta Gráfica RTX 4090,,sess_iv2dsc0tqt,out_of_stock,1
+2026-05-23T11:03:02.462Z,order_failed,,desktop,,Sin stock suficiente,,18,1600,1,Tarjeta Gráfica RTX 4090,,sess_7ax099neshh,out_of_stock,1
+2026-05-23T18:04:37.559Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_0mq7enrecwf,,3810
+2026-05-23T21:25:14.592Z,catalog_browsed,,mobile,,,10,6,,,,,sess_rnsdnhy0t3d,success,3809
+2026-05-23T03:19:13.958Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_chiths855bk,,1
+2026-05-23T01:43:55.963Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_da4513cwjzs,,1
+2026-05-23T02:22:36.989Z,product_viewed,Componentes,desktop,,,,,120,5,Fuente de Poder 850W,,sess_415rrpbehzy,,3811
+2026-05-22T22:42:09.020Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_mslybd6251,,3812
+2026-05-23T02:22:54.139Z,product_viewed,Periféricos,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_gi3uuu9zska,,3813
+2026-05-23T13:21:28.147Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_sbmh7ww43o7,,3814
+2026-05-23T13:27:33.213Z,product_viewed,Periféricos,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_63sl4mgazp9,,3815
+2026-05-23T12:56:50.222Z,catalog_browsed,,desktop,,,10,11,,,,,sess_0p1nbe7cghoj,success,
+2026-05-23T19:05:45.231Z,product_viewed,Periféricos,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_wveyd48gq2d,,3816
+2026-05-23T00:35:24.237Z,product_viewed,Periféricos,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_20zabxd2r49,,3818
+2026-05-23T03:49:58.240Z,product_viewed,Componentes,mobile,,,,,120,5,Fuente de Poder 850W,,sess_0lglilu9i08,,3817
+2026-05-23T21:16:34.353Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_xqq3wbtrjho,,
+2026-05-22T23:50:12.459Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_8xq61km1y32,,1
+2026-05-23T10:01:49.464Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_m39hl1e5a3,,1
+2026-05-23T00:15:51.483Z,order_failed,,desktop,,Sin stock suficiente,,24,1600,1,Tarjeta Gráfica RTX 4090,,sess_8mnbnut313h,out_of_stock,1
+2026-05-23T00:07:33.485Z,order_failed,,mobile,,Sin stock suficiente,,21,1600,1,Tarjeta Gráfica RTX 4090,,sess_ubr45ypfcrb,out_of_stock,1
+2026-05-23T01:23:07.755Z,catalog_browsed,,desktop,,,10,6,,,,,sess_025358kwr9he,success,
+2026-05-23T20:55:13.899Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_ggxd0gtfjz,,
+2026-05-23T21:08:54.921Z,user_registered,,desktop,navegante_20985@technova.com,,,21,,,,,sess_zsc9rw99zue,success,3819
+2026-05-23T16:05:45.983Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_cnzjslwow56,,1
+2026-05-23T21:55:12.985Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_1mp4llofrey,,2
+2026-05-23T00:58:56.023Z,product_viewed,Periféricos,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_1uww71g9rryh,,3809
+2026-05-23T05:59:18.277Z,product_viewed,Audio,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_wz79wnl7qla,,
+2026-05-23T13:12:23.484Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_w247n8db7ge,,1
+2026-05-22T23:17:22.486Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_rlfjmfw3ts,,2
+2026-05-23T15:00:00.490Z,order_attempted,,mobile,,,,,120,5,Fuente de Poder 850W,,sess_nzkyz1nvjgg,,3811
+2026-05-23T18:15:53.516Z,order_failed,,desktop,,Sin stock suficiente,,32,1600,1,Tarjeta Gráfica RTX 4090,,sess_9fbehum3ie,out_of_stock,1
+2026-05-23T00:37:08.521Z,order_attempted,,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_p8918gxvglo,,3812
+2026-05-23T02:33:27.524Z,product_viewed,Audio,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_x66xtijoewj,,
+2026-05-23T21:36:18.525Z,order_failed,,desktop,,Sin stock suficiente,,39,1600,1,Tarjeta Gráfica RTX 4090,,sess_sjzvuno8v1i,out_of_stock,2
+2026-05-22T23:36:14.539Z,order_completed,,desktop,,,,48,120,5,Fuente de Poder 850W,1,sess_4xewpxc5viw,success,3811
+2026-05-23T14:24:43.558Z,order_completed,,desktop,,,,37,150,3,Memoria RAM 32GB DDR5,1,sess_7y5x5hukhu,success,3812
+2026-05-23T00:39:15.559Z,user_registered,,desktop,comprador_18914@technova.com,,,19,,,,,sess_lkyrbcebmb,success,3820
+2026-05-23T13:07:29.571Z,user_registered,,desktop,comprador_62378@technova.com,,,13,,,,,sess_07jd32fmig8,success,3821
+2026-05-22T22:45:06.640Z,order_attempted,,mobile,,,,,70,8,Mouse Gamer Inalámbrico,,sess_8cihf0qzzy7,,3813
+2026-05-23T14:05:21.648Z,order_attempted,,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_le76ypp9nte,,3814
+2026-05-23T02:28:37.659Z,order_completed,,mobile,,,,19,70,8,Mouse Gamer Inalámbrico,1,sess_vhm5geggkl,success,3813
+2026-05-23T17:17:42.669Z,order_failed,,desktop,,Sin stock suficiente,,21,350,4,Placa Base ASUS ROG,,sess_p7m4u7ruk1,out_of_stock,3814
+2026-05-23T09:20:41.675Z,user_registered,,desktop,comprador_95888@technova.com,,,16,,,,,sess_fz29fyuduwu,success,3822
+2026-05-23T01:10:01.680Z,user_registered,,mobile,comprador_17932@technova.com,,,11,,,,,sess_7bng3oavuqw,success,3823
+2026-05-23T02:36:26.714Z,order_attempted,,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_efoe68ehl4s,,3815
+2026-05-23T19:04:35.726Z,order_completed,,desktop,,,,12,90,7,Teclado Mecánico RGB,1,sess_1ui7hmqz4ke,success,3815
+2026-05-23T20:22:05.732Z,order_attempted,,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_9mlwmpojo2j,,3816
+2026-05-23T22:29:31.737Z,user_registered,,mobile,comprador_7090@technova.com,,,10,,,,,sess_6ghhmea0bx5,success,3824
+2026-05-23T03:16:58.738Z,order_attempted,,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_8e5xm50ixhm,,3818
+2026-05-23T22:26:58.740Z,order_attempted,,desktop,,,,,120,5,Fuente de Poder 850W,,sess_l8rxa09xz1l,,3817
+2026-05-23T02:25:30.758Z,order_completed,,desktop,,,,20,90,7,Teclado Mecánico RGB,1,sess_eblph9uq3eg,success,3818
+2026-05-23T01:33:15.761Z,order_completed,,desktop,,,,28,90,7,Teclado Mecánico RGB,1,sess_nf9lvtkl3vl,success,3816
+2026-05-23T15:18:28.764Z,order_completed,,desktop,,,,24,120,5,Fuente de Poder 850W,1,sess_ewxd8vhozom,success,3817
+2026-05-23T01:19:23.771Z,user_registered,,mobile,comprador_7311@technova.com,,,10,,,,,sess_exuq34g0v8,success,3825
+2026-05-23T00:02:12.774Z,user_registered,,mobile,comprador_53639@technova.com,,,16,,,,,sess_8yg9mlxsx8c,success,3826
+2026-05-23T00:03:44.776Z,user_registered,,desktop,comprador_79846@technova.com,,,12,,,,,sess_cxhs8741j3c,success,3827
+2026-05-23T19:47:25.017Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_3f9tg3qnf22,,2
+2026-05-23T11:56:23.026Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_quj9g6khkub,,1
+2026-05-23T12:29:39.092Z,catalog_browsed,,desktop,,,10,5,,,,,sess_sqaqgshtt2,success,3819
+2026-05-23T01:12:24.391Z,catalog_browsed,,desktop,,,10,6,,,,,sess_fol278cwvf6,success,
+2026-05-23T22:27:19.426Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_3ju1rhljzlq,,3809
+2026-05-23T21:20:57.518Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_u3aerie0vn,,2
+2026-05-23T18:47:26.527Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_ummm2s6uf5,,1
+2026-05-23T17:36:32.538Z,order_failed,,mobile,,Sin stock suficiente,,20,1600,1,Tarjeta Gráfica RTX 4090,,sess_vhou9twph49,out_of_stock,2
+2026-05-22T22:43:36.546Z,order_failed,,desktop,,Sin stock suficiente,,19,1600,1,Tarjeta Gráfica RTX 4090,,sess_vixw238yqu,out_of_stock,1
+2026-05-23T21:17:55.568Z,user_logged_in,,desktop,comprador_18914@technova.com,,,8,,,,,sess_p33qnla1ddo,success,3820
+2026-05-23T15:16:55.574Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_al5xmfjndso,,
+2026-05-23T14:36:12.584Z,user_logged_in,,mobile,comprador_62378@technova.com,,,12,,,,,sess_cfl8cf94ip,success,3821
+2026-05-23T00:25:02.592Z,user_registered,,desktop,navegante_4200@technova.com,,,18,,,,,sess_yrrwj4hi5ag,success,3828
+2026-05-23T22:05:15.630Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_qz1u4o5h7hn,,
+2026-05-23T21:06:50.646Z,user_registered,,desktop,navegante_55957@technova.com,,,15,,,,,sess_9zzkdxt1na6,success,3829
+2026-05-23T00:17:34.681Z,user_logged_in,,mobile,comprador_95888@technova.com,,,6,,,,,sess_obtjl37c09i,success,3822
+2026-05-23T01:25:44.686Z,user_logged_in,,desktop,comprador_17932@technova.com,,,5,,,,,sess_bj72p44sn79,success,3823
+2026-05-23T21:34:51.743Z,user_logged_in,,desktop,comprador_7090@technova.com,,,5,,,,,sess_tjswzinpdvm,success,3824
+2026-05-23T17:21:12.777Z,user_logged_in,,desktop,comprador_7311@technova.com,,,6,,,,,sess_5r1gtkfftz3,success,3825
+2026-05-23T02:43:47.782Z,user_logged_in,,desktop,comprador_53639@technova.com,,,7,,,,,sess_48b9c21zz8t,success,3826
+2026-05-23T15:08:22.783Z,user_logged_in,,desktop,comprador_79846@technova.com,,,6,,,,,sess_1wmxa2qz8d5i,success,3827
+2026-05-23T18:49:31.039Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_qn4bs8vbtem,,2
+2026-05-23T15:08:34.048Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_09xbehl184bl,,2
+2026-05-23T18:14:38.376Z,product_viewed,Almacenamiento,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_6s26uxnhzpq,,3819
+2026-05-23T00:07:44.385Z,user_registered,,desktop,navegante_87505@technova.com,,,8,,,,,sess_nuwvatuqd3g,success,3830
+2026-05-23T01:50:09.541Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_tlvc7qz0h9,,2
+2026-05-23T03:47:43.549Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_96nqsmyypqc,,2
+2026-05-22T23:43:48.551Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_iveh3isxhgq,,
+2026-05-23T01:04:19.563Z,order_failed,,mobile,,Sin stock suficiente,,22,1600,1,Tarjeta Gráfica RTX 4090,,sess_sguplv8njri,out_of_stock,2
+2026-05-23T04:08:31.568Z,order_failed,,desktop,,Sin stock suficiente,,19,1600,1,Tarjeta Gráfica RTX 4090,,sess_tq7wbmhw6i,out_of_stock,2
+2026-05-23T01:43:26.574Z,product_viewed,Periféricos,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_4mko4b2jber,,3820
+2026-05-23T19:11:45.590Z,product_viewed,Audio,mobile,,,,,85,10,Auriculares Gaming 7.1,,sess_tj3ex0qpwka,,3821
+2026-05-23T20:01:39.687Z,product_viewed,Memorias,mobile,,,,,150,3,Memoria RAM 32GB DDR5,,sess_emurbcmony9,,3822
+2026-05-23T00:12:15.691Z,product_viewed,Componentes,mobile,,,,,350,4,Placa Base ASUS ROG,,sess_3da46awheu5,,3823
+2026-05-23T17:35:54.736Z,catalog_browsed,,desktop,,,10,10,,,,,sess_l8koqh91jy,success,
+2026-05-23T13:11:48.752Z,product_viewed,Componentes,mobile,,,,,600,2,Procesador Intel Core i9,,sess_r4jnefh9ctb,,3824
+2026-05-23T01:57:55.791Z,product_viewed,Periféricos,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_cyj5w8kndqq,,3825
+2026-05-22T23:35:34.792Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_m9eax00xger,,3826
+2026-05-23T17:17:26.793Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_anez6aez8w6,,3827
+2026-05-23T02:29:51.064Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_z0rtv7c24xo,,2
+2026-05-23T18:24:30.068Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_r9cx7tofjv8,,2
+2026-05-23T09:36:16.565Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_zgnk0wqch6,,2
+2026-05-22T23:58:16.569Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_wx4spno09k,,2
+2026-05-22T23:54:46.580Z,order_failed,,desktop,,Sin stock suficiente,,15,1600,1,Tarjeta Gráfica RTX 4090,,sess_i6ypz85d4q,out_of_stock,2
+2026-05-23T00:57:53.585Z,order_failed,,desktop,,Sin stock suficiente,,16,1600,1,Tarjeta Gráfica RTX 4090,,sess_6m4xzi6xc5w,out_of_stock,2
+2026-05-23T00:48:37.758Z,catalog_browsed,,desktop,,,10,7,,,,,sess_2nup7sr9b11,success,
+2026-05-23T00:50:59.002Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_fhfopyrpei5,,
+2026-05-23T03:06:47.074Z,order_attempted,,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_z91g5gc99l,,3820
+2026-05-23T16:37:55.080Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_29uxjzk82mi,,1
+2026-05-22T23:38:32.086Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_i7d6ka7zzpq,,1
+2026-05-23T18:14:41.091Z,order_attempted,,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_woa28yp1kp,,3821
+2026-05-23T13:33:17.093Z,order_completed,,desktop,,,,19,90,7,Teclado Mecánico RGB,1,sess_c7hms88tvkp,success,3820
+2026-05-23T14:00:29.107Z,user_registered,,desktop,comprador_62605@technova.com,,,14,,,,,sess_c5uby4af6dc,success,3831
+2026-05-23T21:14:54.112Z,order_completed,,mobile,,,,21,85,10,Auriculares Gaming 7.1,1,sess_3tn301ud9,success,3821
+2026-05-23T14:25:52.118Z,user_registered,,desktop,comprador_89390@technova.com,duplicate_or_error,,6,,,,,sess_efkctmt43hd,failed,
+2026-05-23T00:09:16.128Z,user_registered,,desktop,comprador_97665@technova.com,,,10,,,,,sess_oj2qxn7hmsq,success,3832
+2026-05-23T00:30:10.188Z,order_attempted,,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_zlhwmmwmrej,,3822
+2026-05-23T16:31:21.192Z,order_attempted,,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_n415pqqwx7o,,3823
+2026-05-23T17:19:41.216Z,catalog_browsed,,mobile,,,10,10,,,,,sess_iu552ne1fdq,success,3829
+2026-05-23T18:15:19.220Z,order_completed,,mobile,,,,32,150,3,Memoria RAM 32GB DDR5,1,sess_98cx509a0g,success,3822
+2026-05-23T01:45:18.226Z,order_failed,,desktop,,Sin stock suficiente,,34,350,4,Placa Base ASUS ROG,,sess_ue81g9hck4d,out_of_stock,3823
+2026-05-23T17:46:05.242Z,user_registered,,mobile,comprador_41300@technova.com,,,22,,,,,sess_c2wa0bwjfz7,success,3833
+2026-05-23T13:36:50.246Z,user_registered,,desktop,comprador_50497@technova.com,,,20,,,,,sess_9x5o6nyignk,success,3834
+2026-05-23T13:37:56.253Z,order_attempted,,desktop,,,,,600,2,Procesador Intel Core i9,,sess_1vx4dqrtylm,,3824
+2026-05-23T21:48:43.267Z,order_failed,,mobile,,Sin stock suficiente,,14,600,2,Procesador Intel Core i9,,sess_4quth5io32v,out_of_stock,3824
+2026-05-23T00:56:49.278Z,user_registered,,desktop,comprador_42389@technova.com,,,11,,,,,sess_16pgbbi8y8i,success,3835
+2026-05-23T03:30:33.292Z,order_attempted,,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_xypfr7le0pq,,3825
+2026-05-23T11:51:11.292Z,order_attempted,,mobile,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_t0otxbtox6k,,3826
+2026-05-23T00:55:43.294Z,order_attempted,,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_xoo5oeld068,,3827
+2026-05-23T17:22:55.333Z,order_completed,,desktop,,,,41,90,7,Teclado Mecánico RGB,1,sess_nve2hrwbfz,success,3825
+2026-05-23T01:19:03.335Z,order_completed,,mobile,,,,40,70,8,Mouse Gamer Inalámbrico,1,sess_ahqtejrmpu,success,3827
+2026-05-23T22:22:00.337Z,order_completed,,mobile,,,,44,300,6,"Monitor Gaming 27"" 144Hz",1,sess_9cbfzf46ass,success,3826
+2026-05-22T23:53:33.348Z,user_registered,,desktop,comprador_79896@technova.com,duplicate_or_error,,12,,,,,sess_l2oyj87lyz,failed,
+2026-05-22T22:58:55.360Z,user_registered,,mobile,comprador_33010@technova.com,,,23,,,,,sess_2iq5zs7u2t,success,3837
+2026-05-23T19:45:04.364Z,user_registered,,desktop,comprador_97221@technova.com,,,16,,,,,sess_t3w9eij952,success,3838
+2026-05-23T13:33:49.367Z,user_registered,,desktop,comprador_12192@technova.com,,,34,,,,,sess_llkx4gi20t8,success,3836
+2026-05-23T19:16:59.533Z,catalog_browsed,,desktop,,,10,5,,,,,sess_o8beh88h0nj,success,3828
+2026-05-23T01:50:46.581Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_krg48d7i31,,1
+2026-05-23T21:20:04.588Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_4zhj4acqubq,,1
+2026-05-23T15:15:09.599Z,order_failed,,desktop,,Sin stock suficiente,,16,1600,1,Tarjeta Gráfica RTX 4090,,sess_77izevipqp,out_of_stock,1
+2026-05-23T16:27:14.602Z,order_failed,,desktop,,Sin stock suficiente,,14,1600,1,Tarjeta Gráfica RTX 4090,,sess_28yr8xsn9fo,out_of_stock,1
+2026-05-22T23:40:53.711Z,product_viewed,Periféricos,desktop,,,,,90,7,Teclado Mecánico RGB,,sess_0xe77jgamn3,,
+2026-05-23T01:06:44.746Z,product_viewed,Monitores,desktop,,,,,300,6,"Monitor Gaming 27"" 144Hz",,sess_hdxd82qys2n,,3829
+2026-05-23T05:24:47.754Z,user_registered,,desktop,navegante_3829@technova.com,,,8,,,,,sess_0fhgelc2mry,success,3839
+2026-05-23T20:58:24.968Z,product_viewed,Componentes,mobile,,,,,350,4,Placa Base ASUS ROG,,sess_wigd5i9vhz,,
+2026-05-23T17:03:35.099Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_9wrsxoarjh,,2
+2026-05-22T23:45:44.103Z,product_viewed,Componentes,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_vqj3hp54xnd,,2
+2026-05-23T03:30:23.118Z,user_logged_in,,desktop,comprador_62605@technova.com,,,10,,,,,sess_ozpoesqahqf,success,3831
+2026-05-23T00:07:31.137Z,user_logged_in,,mobile,comprador_97665@technova.com,,,8,,,,,sess_pr41u4fowtf,success,3832
+2026-05-23T00:15:09.238Z,product_viewed,Almacenamiento,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_cvtuobp9uz,,3828
+2026-05-22T23:48:33.253Z,user_logged_in,,mobile,comprador_41300@technova.com,,,10,,,,,sess_3l3waqs1zq5,success,3833
+2026-05-23T18:00:58.254Z,user_logged_in,,desktop,comprador_50497@technova.com,,,8,,,,,sess_fjmcaq6b6na,success,3834
+2026-05-23T01:56:14.290Z,catalog_browsed,,mobile,,,10,7,,,,,sess_1qtlnvw0y9p,success,3830
+2026-05-23T18:54:12.290Z,user_logged_in,,desktop,comprador_42389@technova.com,,,11,,,,,sess_1vleiodmsu4,success,3835
+2026-05-23T14:05:52.369Z,user_logged_in,,desktop,comprador_33010@technova.com,,,8,,,,,sess_1a7uebkmypr,success,3837
+2026-05-23T13:51:07.376Z,user_logged_in,,desktop,comprador_97221@technova.com,,,11,,,,,sess_fo1wjup7ttv,success,3838
+2026-05-22T23:11:16.377Z,user_logged_in,,mobile,comprador_12192@technova.com,,,9,,,,,sess_a9j4ei9ddkj,success,3836
+2026-05-23T03:39:02.601Z,order_attempted,,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_4sijkw9mi23,,2
+2026-05-23T00:36:15.604Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_fg5j6z45mhw,,2
+2026-05-23T05:43:40.618Z,order_failed,,mobile,,Sin stock suficiente,,17,1600,1,Tarjeta Gráfica RTX 4090,,sess_8bz9h3jkr0m,out_of_stock,2
+2026-05-23T00:18:16.620Z,order_failed,,mobile,,Sin stock suficiente,,16,1600,1,Tarjeta Gráfica RTX 4090,,sess_1h6y7un4sc8,out_of_stock,2
+2026-05-22T22:48:03.084Z,product_viewed,Periféricos,mobile,,,,,90,7,Teclado Mecánico RGB,,sess_ib5n5lht6td,,3830
+2026-05-23T17:29:49.124Z,product_viewed,Componentes,desktop,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_l5cksiokjjo,,3831
+2026-05-23T03:00:45.143Z,product_viewed,Audio,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_xuva7gtqb3p,,3832
+2026-05-23T09:21:30.259Z,product_viewed,Audio,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_8jmte35zrjn,,3834
+2026-05-23T00:11:25.260Z,product_viewed,Audio,mobile,,,,,85,10,Auriculares Gaming 7.1,,sess_wxv8tvz3r,,3833
+2026-05-23T01:18:31.296Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_7qxhib9gand,,3835
+2026-05-23T16:47:28.380Z,product_viewed,Almacenamiento,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_k9s41wwtv9,,3837
+2026-05-23T18:46:33.385Z,product_viewed,Componentes,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_ynjcip8zubc,,3836
+2026-05-23T21:58:16.386Z,product_viewed,Audio,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_o9e0qmzqtze,,3838
+2026-05-23T19:02:02.406Z,product_viewed,Componentes,desktop,,,,,120,5,Fuente de Poder 850W,,sess_xwkwkjhz848,,3828
+2026-05-23T00:14:51.412Z,catalog_browsed,,desktop,,,10,5,,,,,sess_us2k5bin2en,success,
+2026-05-23T15:56:31.969Z,product_viewed,Memorias,desktop,,,,,150,3,Memoria RAM 32GB DDR5,,sess_ffftscgwh1d,,
+2026-05-23T17:24:37.161Z,catalog_browsed,,mobile,,,10,11,,,,,sess_vsc8n8n9s6p,success,3839
+2026-05-23T20:54:26.202Z,catalog_browsed,,mobile,,,10,8,,,,,sess_vrqaptd1un,success,
+2026-05-22T22:58:01.625Z,order_attempted,,mobile,,,,,1600,1,Tarjeta Gráfica RTX 4090,,sess_qsell4x08fm,,3831
+2026-05-23T22:35:28.635Z,order_failed,,desktop,,Sin stock suficiente,,10,1600,1,Tarjeta Gráfica RTX 4090,,sess_7bhboefg3za,out_of_stock,3831
+2026-05-23T22:10:08.643Z,order_attempted,,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_u1k4uexdr0h,,3832
+2026-05-23T19:52:40.662Z,order_completed,,desktop,,,,18,85,10,Auriculares Gaming 7.1,1,sess_k2fn8vqbkqp,success,3832
+2026-05-23T21:19:49.760Z,order_attempted,,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_hnb0lodwltb,,3834
+2026-05-23T00:23:52.760Z,order_attempted,,mobile,,,,,85,10,Auriculares Gaming 7.1,,sess_1fx4qhnytyu,,3833
+2026-05-23T16:23:21.786Z,order_completed,,desktop,,,,26,85,10,Auriculares Gaming 7.1,1,sess_9a7zg0vr28a,success,3834
+2026-05-23T18:47:48.787Z,order_completed,,desktop,,,,26,85,10,Auriculares Gaming 7.1,1,sess_a1gr559g5rj,success,3833
+2026-05-23T19:57:30.797Z,order_attempted,,mobile,,,,,150,3,Memoria RAM 32GB DDR5,,sess_pvur3u92ry9,,3835
+2026-05-23T20:55:51.809Z,order_completed,,desktop,,,,12,150,3,Memoria RAM 32GB DDR5,1,sess_h6au9qy1pds,success,3835
+2026-05-23T09:45:26.822Z,product_viewed,Almacenamiento,desktop,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_k3pilunnk7j,,3839
+2026-05-23T16:52:17.880Z,order_attempted,,mobile,,,,,110,9,Unidad SSD 1TB NVMe M.2,,sess_l2mbak6he2s,,3837
+2026-05-23T16:05:07.885Z,order_attempted,,desktop,,,,,350,4,Placa Base ASUS ROG,,sess_efhacryy51v,,3836
+2026-05-23T16:12:53.887Z,order_attempted,,desktop,,,,,85,10,Auriculares Gaming 7.1,,sess_nnqxmarahf,,3838
+2026-05-23T06:14:56.907Z,order_failed,,desktop,,Sin stock suficiente,,21,350,4,Placa Base ASUS ROG,,sess_iersxly8cyg,out_of_stock,3836
+2026-05-23T15:43:06.910Z,order_completed,,desktop,,,,30,110,9,Unidad SSD 1TB NVMe M.2,1,sess_e3g82bsg8rm,success,3837
+2026-05-22T22:39:26.912Z,order_completed,,mobile,,,,25,85,10,Auriculares Gaming 7.1,1,sess_amslh4mho4,success,3838
+2026-05-23T02:02:33.967Z,product_viewed,Componentes,mobile,,,,,600,2,Procesador Intel Core i9,,sess_b4uj959fset,,
+2026-05-23T00:39:45.273Z,product_viewed,Periféricos,desktop,,,,,70,8,Mouse Gamer Inalámbrico,,sess_r1ybdgqkizd,,
+2026-05-23T15:22:12.469Z,product_viewed,Componentes,desktop,,,,,600,2,Procesador Intel Core i9,,sess_3dl39r48ke,,

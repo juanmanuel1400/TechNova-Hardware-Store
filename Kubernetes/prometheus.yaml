@@ -1,0 +1,61 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 10s # Recolectar métricas cada 10 segundos
+    scrape_configs:
+      - job_name: 'microservicios-fastapi'
+        static_configs:
+          # Aquí le decimos que busque en los servicios internos de Kubernetes
+          - targets: ['catalogo-service:8000']
+            labels:
+              servicio: 'Catálogo'
+          - targets: ['usuarios-service:8000']
+            labels:
+              servicio: 'Usuarios'
+          - targets: ['ordenes-service:8000']
+            labels:
+              servicio: 'Órdenes'
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prometheus
+  template:
+    metadata:
+      labels:
+        app: prometheus
+    spec:
+      containers:
+        - name: prometheus
+          image: prom/prometheus:latest
+          ports:
+            - containerPort: 9090
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/prometheus/prometheus.yml
+              subPath: prometheus.yml
+      volumes:
+        - name: config-volume
+          configMap:
+            name: prometheus-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus-service
+spec:
+  type: ClusterIP
+  selector:
+    app: prometheus
+  ports:
+    - port: 9090
+      targetPort: 9090

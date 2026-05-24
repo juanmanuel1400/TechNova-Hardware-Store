@@ -3,114 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova Gamer - Hardware Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>TechNova Gamer - Tienda de Hardware</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
             background-color: #121212;
+            color: #e0e0e0;
+        }
+        .navbar {
+            background-color: #1a1a1a !important;
+            border-bottom: 1px solid #2d2d2d;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #2d2d2d;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        .card-title {
             color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top">
-        <div class="container-fluid px-4">
-            <a class="navbar-brand text-info fw-bold fs-4" href="#">
-                <i class="fa-solid fa-gamepad"></i> TechNova Gamer
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-info fw-bold" href="#"><i class="fa-solid fa-gamepad"></i> TechNova Gamer</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item me-3">
-                        <span id="userDisplay" class="text-info fw-bold fs-5"></span>
-                    </li>
-                    <li class="nav-item">
-                        <button id="historialBtn" class="btn btn-outline-info me-2" onclick="cargarMisOrdenes()">
-                            <i class="fa-solid fa-clock-rotate-left"></i> Mis Órdenes
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button id="loginBtn" class="btn btn-outline-light me-2" onclick="authModal.show()">
-                            <i class="fa-solid fa-user"></i> Iniciar Sesión
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button id="logoutBtn" class="btn btn-danger me-2" style="display: none;" onclick="cerrarSesion()">
-                            <i class="fa-solid fa-right-from-bracket"></i> Salir
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-success" onclick="cartModal.show()">
-                            <i class="fa-solid fa-cart-shopping"></i> Carrito
-                        </button>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="d-flex gap-2 align-items-center">
+                    <span id="labelUsuario" class="text-info me-2 fw-medium"></span>
+                    <button class="btn btn-outline-info btn-sm" onclick="cargarMisOrdenes()"><i class="fa-solid fa-history"></i> Mis Órdenes</button>
+                    <button class="btn btn-outline-light btn-sm" id="btnAuth" onclick="abrirAuthModal()"><i class="fa-solid fa-user"></i> Iniciar Sesión</button>
+                    <button class="btn btn-success btn-sm"><i class="fa-solid fa-shopping-cart"></i> Carrito</button>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div class="container my-5">
-        <div class="text-center mb-5">
-            <h1 class="display-4 fw-bold">Catálogo de Hardware</h1>
-            <p class="lead text-muted">Equipa tu setup con los mejores componentes del mercado.</p>
-        </div>
-        
-        <div class="row" id="productos-container">
+    <header class="container text-center my-5">
+        <h1 class="display-4 fw-bold text-light">Catálogo de Hardware</h1>
+        <p class="text-muted">Equipa tu setup con los mejores componentes del mercado.</p>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="listaProductos">
             </div>
-    </div>
+    </main>
 
     <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-bg-dark border-secondary">
+            <div class="modal-content bg-dark text-light border-secondary">
                 <div class="modal-header border-secondary">
-                    <h5 class="modal-title" id="authTitle"><i class="fa-solid fa-user-lock"></i> Iniciar Sesión</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="authModalTitle">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body p-4">
-                    <form id="authForm">
-                        <div class="mb-3" id="nombreField" style="display: none;">
+                <div class="modal-body">
+                    <form id="formAuth">
+                        <div class="mb-3 d-none" id="grupoNombre">
                             <label class="form-label">Nombre Completo</label>
-                            <input type="text" class="form-control text-bg-dark text-white border-secondary" id="authNombre">
+                            <input type="text" class="form-control bg-dark text-light border-secondary" id="authNombre">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control text-bg-dark text-white border-secondary" id="authCorreo" required>
+                            <input type="email" class="form-control bg-dark text-light border-secondary" id="authCorreo" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Contraseña</label>
-                            <input type="password" class="form-control text-bg-dark text-white border-secondary" id="authPassword" required>
+                            <input type="password" class="form-control bg-dark text-light border-secondary" id="authPassword" required>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100 fw-bold mt-2" id="authSubmitBtn">Entrar</button>
+                        <button type="submit" class="btn btn-primary w-100" id="btnAuthSubmit">Ingresar</button>
                     </form>
-                    <div class="mt-4 text-center">
-                        <a href="#" class="text-info text-decoration-none" id="toggleAuthMode" onclick="alternarModoAuth()">¿No tienes cuenta? Regístrate aquí</a>
-                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content text-bg-dark border-secondary">
-                <div class="modal-header border-secondary">
-                    <h5 class="modal-title"><i class="fa-solid fa-cart-shopping"></i> Tu Carrito de Compras</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-4">
-                    <div id="cartItems">
-                        </div>
-                </div>
-                <div class="modal-footer border-secondary align-items-center">
-                    <h4 class="me-auto mb-0 text-success">Total: $<span id="cartTotal">0.00</span></h4>
-                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Seguir Comprando</button>
-                    <button type="button" class="btn btn-success fw-bold" onclick="procesarPago()">
-                        <i class="fa-solid fa-shield-halved"></i> Pagar de forma segura
-                    </button>
+                <div class="modal-footer border-secondary justify-content-center">
+                    <a href="#" class="text-info small" id="btnCambiarModo" onclick="conmutarModoAuth()">¿No tienes cuenta? Regístrate</a>
                 </div>
             </div>
         </div>
@@ -118,15 +91,13 @@
 
     <div class="modal fade" id="historialModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content text-bg-dark border-secondary">
+            <div class="modal-content bg-dark text-light border-secondary">
                 <div class="modal-header border-secondary">
-                    <h5 class="modal-title"><i class="fa-solid fa-clock-rotate-left"></i> Historial de Compras</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title"><i class="fa-solid fa-history"></i> Historial de Compras</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body p-4">
-                    <div id="historialItems">
-                        </div>
-                </div>
+                <div class="modal-body" id="historialItems">
+                    </div>
                 <div class="modal-footer border-secondary">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
@@ -134,9 +105,45 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script src="app.js"></script>
+    <div class="modal fade" id="pagoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="fa-solid fa-credit-card"></i> Procesar Pago</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-info small mb-3"><i class="fa-solid fa-circle-info"></i> Pasarela de prueba: Ingresa cualquier dato ficticio.</p>
+                    <form id="formPago" onsubmit="event.preventDefault();">
+                        <div class="mb-3">
+                            <label class="form-label">Titular de la Tarjeta</label>
+                            <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Número de Tarjeta</label>
+                            <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="0000 1111 2222 3333" maxlength="19" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label class="form-label">Fecha de Vencimiento</label>
+                                <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="MM/AA" maxlength="5" required>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label class="form-label">CVV</label>
+                                <input type="password" class="form-control bg-dark text-light border-secondary" placeholder="123" maxlength="3" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" id="btnProcesarPago" onclick="procesarPago()"><i class="fa-solid fa-lock"></i> Pagar de forma segura</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
